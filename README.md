@@ -2,11 +2,14 @@
 
 ### Installation
 
+Git 1.6.5 or later:
 ```
 git clone --recursive git@github.com:3xp0n3nt/dotfiles.git
 cd dotfiles
 ```
-The ```--recursive``` flag tells git to include any submodule directories.
+
+The ```--recrusve``` flag tells git to include any submodule directories, and was added in version [1.6.5](http://git-scm.com/docs/git-clone/1.6.5).
+For older versions of git, you must run ```git submodule update --init``` in the root dotfiles directory to download the submodules. Otherwise the submodule directories will be empty.
 
 Then symlink the files into your $HOME directory, prepending a dot, for example:
 
