@@ -30,7 +30,7 @@ git submodule foreach git pull
 
 ### Git
 
-Update gitconfig with your own username and email (to replace mine):
+Replace my username and email in ```gitconfig``` with your own:
 
 ```
 git config --global user.name "Your Name"
