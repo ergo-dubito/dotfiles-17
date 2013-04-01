@@ -2,6 +2,8 @@
 
 ### Installation
 
+To install into your home directory (will only work if ```~/dotfiles``` directory doesn't exist):
+
 ```
 git clone --recursive git@github.com:3xp0n3nt/dotfiles.git ~/dotfiles
 ```
