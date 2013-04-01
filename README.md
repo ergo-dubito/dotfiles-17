@@ -3,8 +3,7 @@
 ### Installation
 
 ```
-git clone --recursive git@github.com:3xp0n3nt/dotfiles.git
-cd dotfiles
+git clone --recursive git@github.com:3xp0n3nt/dotfiles.git ~/dotfiles
 ```
 
 The ```--recrusve``` flag tells git to include any submodule directories (since [1.6.5](http://git-scm.com/docs/git-clone/1.6.5)).
@@ -13,10 +12,11 @@ For older versions of git, you must run ```git submodule update --init``` in the
 Then symlink the files into your $HOME directory, prepending a dot to each one. For example:
 
 ```
-ln -s /Users/[yourname]/dotfiles/bash_profile /Users/[yourname]/.bash_profile
+cd ~
+ln -s dotfiles/bash_profile .bash_profile
 ```
 
-I plan to write an installation script in the future.
+On my system (OS X 10.6.8 Snow Leopard), symlinks must use absolute directories in order to work properly. I plan to write an installation script in the future.
 
 ### Vim
 
