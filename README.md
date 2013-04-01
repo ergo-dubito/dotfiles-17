@@ -2,7 +2,6 @@
 
 ### Installation
 
-Git 1.6.5 or later:
 ```
 git clone --recursive git@github.com:3xp0n3nt/dotfiles.git
 cd dotfiles
