@@ -6,8 +6,7 @@
 git clone --recursive git@github.com:3xp0n3nt/dotfiles.git ~/dotfiles
 ```
 
-The ```--recrusve``` flag tells git to recursively clone into any submodule directories (since [1.6.5](http://git-scm.com/docs/git-clone/1.6.5)).
-For older versions of git, you must run ```git submodule update --init``` in the root dotfiles directory to clone into the submodules, otherwise their directories will be empty.
+Most of my vim plugins are git submodules. See [below](https://github.com/3xp0n3nt/dotfiles#vim). Git submodules are recursive in nature. The ```--recursive``` flag tells git to recursively clone into any submodule directories, any submodules of submodules, and so on. Without this flag, all submodule directories would be empty.
 
 Then symlink the files into your $HOME directory, prepending a dot to each one. For example:
 
@@ -20,7 +19,7 @@ I plan to write an installation script in the future.
 
 ### Vim
 
-Most of vim's plugins are git submodules, loaded automatically by the [pathogen](https://github.com/tpope/vim-pathogen) plugin from the vim/[bundle](https://github.com/3xp0n3nt/dotfiles/tree/master/vim/bundle) subdirectory. Interestingly, pathogen itself is a git submodule inside vim/[bundle](https://github.com/3xp0n3nt/dotfiles/tree/master/vim/bundle). You can learn more [here](https://github.com/tpope/vim-pathogen/blob/master/README.markdown). The author of pathogen, [Tim Pope](http://tpo.pe), calls this setup "getting crazy." And he doesn't like to get crazy. But I do ;-).
+Most of my vim plugins are git submodules, loaded automatically by the [pathogen](https://github.com/tpope/vim-pathogen) plugin from the vim/[bundle](https://github.com/3xp0n3nt/dotfiles/tree/master/vim/bundle) subdirectory. Interestingly, pathogen itself is a git submodule inside vim/[bundle](https://github.com/3xp0n3nt/dotfiles/tree/master/vim/bundle). You can learn more [here](https://github.com/tpope/vim-pathogen/blob/master/README.markdown). The author of pathogen, [Tim Pope](http://tpo.pe), calls this setup "getting crazy." And he doesn't like to get crazy. But I do ;-).
 
 To update all of vim's submodule plugins at once:
 
