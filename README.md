@@ -11,7 +11,10 @@ http://blog.bitfluent.com/post/173740409/ignoring-icon-in-gitignore
 If you want to view the correct gitignore_global, you can go here:
 https://raw.github.com/3xp0n3nt/dotfiles/master/git/gitignore_global
 
-To apply custom OS X settings, run ./.osx.
+To apply custom OS X settings, run
+```
+./.osx
+```
 
 My collection of dotfiles is still in its infancy. I am inspired, however, by
 Mathias Bynens' impressive collection of collaborative dotfiles, found here:
