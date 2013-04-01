@@ -7,7 +7,7 @@ git clone git@github.com:3xp0n3nt/dotfiles.git
 cd dotfiles
 ```
 
-Symlink the files into your $HOME directory, appending a dot to each one, for example:
+Then symlink the files into your $HOME directory, prepending a dot, for example:
 
 ```
 ln -s /Users/[yourname]/dotfiles/bash_profile /Users/[yourname]/.bash_profile
