@@ -1,22 +1,24 @@
-Aaron Mahan's dotfiles.
+## Aaron Mahan's dotfiles.
 
-Note: gitignore_global no longer displays properly in the GitHub file preview
-window after I added two literal carriage return characters to the OS X 'Icon'
-rule, so that git will correctly ignore OS X generated 'Icon' files that end in
-a literal carriage return character (although they can deceptively appear as
-'Icon?', they are actually 'Icon\r'). You can check out this blog post for more
-information:
-http://blog.bitfluent.com/post/173740409/ignoring-icon-in-gitignore
+### Git
 
-If you want to view the correct gitignore_global, you can go here:
-https://raw.github.com/3xp0n3nt/dotfiles/master/git/gitignore_global
+Note: ```gitignore_global``` no longer displays properly in the GitHub file preview
+window after I added two literal carriage return characters to the OS X ```Icon\r```
+rule, so that git will correctly ignore OS X-generated ```Icon\r``` files that end in
+a literal carriage return character, ```^M``` (although they can deceptively appear as
+```Icon?```). You can check out [this](http://blog.bitfluent.com/post/173740409/ignoring-icon-in-gitignore) blog post for more
+information.
+
+You can view my ```gitignore_global``` correctly in it's [raw](https://raw.github.com/3xp0n3nt/dotfiles/master/git/gitignore_global) form (although you still won't be able to see the literal ```^M``` 's).
+
+### OS X
 
 To apply custom OS X settings, run
 ```
 ./.osx
 ```
 
-My collection of dotfiles is still in its infancy. I am inspired, however, by
-Mathias Bynens' impressive collection of collaborative dotfiles, found here:
+### Notes
 
-https://github.com/mathiasbynens/dotfiles
+My collection of dotfiles is still in its infancy. I am inspired, however, by
+Mathias Bynens' impressive [collection](https://github.com/mathiasbynens/dotfiles) of collaborative dotfiles.
