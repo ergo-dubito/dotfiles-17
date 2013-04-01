@@ -1,5 +1,20 @@
 ## Aaron Mahan's dotfiles.
 
+### Installation
+
+```
+git clone git@github.com:3xp0n3nt/dotfiles.git
+cd dotfiles
+```
+
+Symlink the files into your $HOME directory, appending a dot to each one, for example:
+
+```
+ln -s /Users/[yourname]/dotfiles/bash_profile /Users/[yourname]/.bash_profile
+```
+
+I plan to write an installation script in the future.
+
 ### Git
 
 ```gitignore_global``` cannot be displayed properly in the GitHub preview window ever since I added two literal ```^M``` (aka ```\r```, or carriage return) characters to the OS X ```Icon```
@@ -17,6 +32,8 @@ To apply custom OS X settings, run
 ```
 
 ### Notes
+
+Many of these dotfiles are customized for OS X Snow Leopard. You may need to modify them for your specific os.
 
 My collection of dotfiles is still in its infancy. I am inspired, however, by
 Mathias Bynens' impressive [collection](https://github.com/mathiasbynens/dotfiles) of collaborative dotfiles.
