@@ -6,7 +6,7 @@
 git clone --recursive git@github.com:3xp0n3nt/dotfiles.git
 cd dotfiles
 ```
-The ```--recursive``` flag tells git to include submodule directories.
+The ```--recursive``` flag tells git to include any submodule directories.
 
 Then symlink the files into your $HOME directory, prepending a dot, for example:
 
