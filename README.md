@@ -3,9 +3,10 @@
 ### Installation
 
 ```
-git clone git@github.com:3xp0n3nt/dotfiles.git
+git clone --recursive git@github.com:3xp0n3nt/dotfiles.git
 cd dotfiles
 ```
+The ```--recursive``` flag tells git to include submodule directories.
 
 Then symlink the files into your $HOME directory, prepending a dot, for example:
 
@@ -14,6 +15,10 @@ ln -s /Users/[yourname]/dotfiles/bash_profile /Users/[yourname]/.bash_profile
 ```
 
 I plan to write an installation script in the future.
+
+### Vim
+
+Most of vim's plugins are git submodules, managed by [fugitive](https://github.com/tpope/vim-fugitive) in the vim/[bundle](https://github.com/3xp0n3nt/dotfiles/tree/master/vim/bundle) directory. Interestingly, fugitive itself is a git submodule in vim/[bundle](https://github.com/3xp0n3nt/dotfiles/tree/master/vim/bundle).
 
 ### Git
 
