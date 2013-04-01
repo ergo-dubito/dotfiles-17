@@ -16,7 +16,7 @@ cd ~
 ln -s dotfiles/bash_profile .bash_profile
 ```
 
-On my system (OS X 10.6.8 Snow Leopard), symlinks must use absolute directories in order to work properly. I plan to write an installation script in the future.
+I plan to write an installation script in the future.
 
 ### Vim
 
