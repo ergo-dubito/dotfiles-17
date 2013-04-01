@@ -20,7 +20,7 @@ I plan to write an installation script in the future.
 
 ### Vim
 
-Most of vim's plugins are git submodules, loaded automatically by [pathogen](https://github.com/tpope/vim-pathogen) in the vim/[bundle](https://github.com/3xp0n3nt/dotfiles/tree/master/vim/bundle) subdirectory. Interestingly, pathogen itself is a git submodule inside vim/[bundle](https://github.com/3xp0n3nt/dotfiles/tree/master/vim/bundle). You can learn more about this [here](https://github.com/tpope/vim-pathogen/blob/master/README.markdown).
+Most of vim's plugins are git submodules, loaded automatically by [pathogen](https://github.com/tpope/vim-pathogen) in the vim/[bundle](https://github.com/3xp0n3nt/dotfiles/tree/master/vim/bundle) subdirectory. Interestingly, pathogen itself is a git submodule inside vim/[bundle](https://github.com/3xp0n3nt/dotfiles/tree/master/vim/bundle). You can learn more about this [here](https://github.com/tpope/vim-pathogen/blob/master/README.markdown). [Tim Pope](http://tpo.pe), creator of pathogen, calls this setup "getting crazy." And he doesn't like to get crazy, but I do ;-).
 
 ### Git
 
