@@ -63,3 +63,5 @@ Many of these dotfiles are customized for OS X Snow Leopard. You may need to mod
 
 My collection of dotfiles is still in its infancy. I am inspired, however, by
 Mathias Bynens' impressive [collection](https://github.com/mathiasbynens/dotfiles) of collaborative dotfiles.
+
+This README file is named ```README.markdown``` to indicate that it uses GitHub-flavored [markdown](http://github.github.com/github-flavored-markdown).
