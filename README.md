@@ -20,7 +20,7 @@ I plan to write an installation script in the future.
 
 ### Vim
 
-Most of vim's plugins are git submodules, managed by [fugitive](https://github.com/tpope/vim-fugitive) in the vim/[bundle](https://github.com/3xp0n3nt/dotfiles/tree/master/vim/bundle) directory. Interestingly, fugitive itself is a git submodule in vim/[bundle](https://github.com/3xp0n3nt/dotfiles/tree/master/vim/bundle).
+Most of vim's plugins are git submodules, managed by [fugitive](https://github.com/tpope/vim-fugitive) in the vim/[bundle](https://github.com/3xp0n3nt/dotfiles/tree/master/vim/bundle) directory. Interestingly, fugitive itself is a git submodule inside vim/[bundle](https://github.com/3xp0n3nt/dotfiles/tree/master/vim/bundle).
 
 ### Git
 
