@@ -6,7 +6,7 @@
 git clone --recursive git@github.com:3xp0n3nt/dotfiles.git ~/dotfiles
 ```
 
-The ```--recrusve``` flag tells git to include any submodule directories (since [1.6.5](http://git-scm.com/docs/git-clone/1.6.5)).
+The ```--recrusve``` flag tells git to recursively clone any submodule directories (since [1.6.5](http://git-scm.com/docs/git-clone/1.6.5)).
 For older versions of git, you must run ```git submodule update --init``` in the root dotfiles directory to download the submodules, otherwise their directories will be empty.
 
 Then symlink the files into your $HOME directory, prepending a dot to each one. For example:
