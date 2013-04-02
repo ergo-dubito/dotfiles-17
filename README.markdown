@@ -32,19 +32,6 @@ git submodule foreach git pull
 
 ### Git
 
-Replace my username and email in ```gitconfig``` with your own:
-
-```
-git config --global user.name  "Your Name"
-git config --global user.email "you@here.com"
-```
-
-Verify the new settings:
-```
-git config --global user.name
-git config --global user.email
-```
-
 ```gitignore_global``` cannot be displayed properly in the GitHub preview window ever since I added two literal ```^M``` (aka ```\r```, or carriage return) characters to the OS X ```Icon```
 rule, so that git will correctly ignore OS X-generated ```Icon\r``` files (that deceptively appear as
 ```Icon?```'s). You can check out [this](http://blog.bitfluent.com/post/173740409/ignoring-icon-in-gitignore) blog post for more
