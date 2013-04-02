@@ -24,7 +24,7 @@ export PATH="$PATH:~/android/tools:~/android/platform-tools/"
 test -r /sw/bin/init.sh && . /sw/bin/init.sh
 
 # Java
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home
 
 # MD5
 alias md5='md5 -r'
