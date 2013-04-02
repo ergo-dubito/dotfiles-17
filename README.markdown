@@ -46,6 +46,19 @@ To apply custom OS X settings, run
 ./.osx
 ```
 
+### Extra
+
+```~/.extra``` will be sourced in bash_profile if it exists. This is where you can keep personal settings that shouldn't be uploaded to a public repository. For example:
+
+```
+GIT_AUTHOR_NAME="Your Name"
+GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+git config --global user.name "$GIT_AUTHOR_NAME"
+GIT_AUTHOR_EMAIL="you@here.com"
+GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+git config --global user.email "$GIT_AUTHOR_EMAIL"
+```
+
 ### Notes
 
 Many of these dotfiles are customized for OS X Snow Leopard. You may need to modify them for your specific os.
