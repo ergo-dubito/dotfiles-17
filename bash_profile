@@ -32,3 +32,6 @@ alias md5sum='md5 -r'
 
 # Python
 export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/2.7/bin/"
+
+# Source .extra if exists (personal settings not checked in with dotfiles)
+[[ -f ~/.extra ]] && source ~/.extra
