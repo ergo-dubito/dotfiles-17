@@ -12,3 +12,5 @@
   default = simple
 [merge]
   ff = false
+[github]
+	user = 3xp0n3nt
