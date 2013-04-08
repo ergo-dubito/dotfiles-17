@@ -5,9 +5,9 @@
   history = log --follow --all -p
   showlastmerge = !git log $(git merge-base --octopus $(git log -1 --merges --pretty=format:%P))..$(git log -1 --merges --pretty=format:%H) --boundary --graph --pretty=oneline --abbrev-commit
 [pager]
-  log  = diff-highlight | less
-  show = diff-highlight | less
-  diff = diff-highlight | less
+  log  = ~/dotfiles/git/diff-highlight | less
+  show = ~/dotfiles/git/diff-highlight | less
+  diff = ~/dotfiles/git/diff-highlight | less
 [push]
   default = simple
 [merge]
