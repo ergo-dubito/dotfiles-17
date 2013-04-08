@@ -38,7 +38,7 @@ set shortmess+=I    " Disable intro screen on startup
 syntax on           " Enable syntax highlighting
 
 " Customize the status bar
-set statusline =[%f]%m%r\ %=
+set statusline =[%F]%m%r\ %=
 set statusline +=%{fugitive#statusline()} " Fugitive / Git
 set statusline +=\ [%l\ /\ %L]\ [%p%%]\ [%v]
 
