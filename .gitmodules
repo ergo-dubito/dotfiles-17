@@ -13,3 +13,6 @@
 [submodule "vim/bundle/vim-git"]
 	path = vim/bundle/vim-git
 	url = https://github.com/tpope/vim-git.git
+[submodule "vim/bundle/blogit"]
+	path = vim/bundle/blogit
+	url = git://github.com/vim-scripts/blogit.vim
