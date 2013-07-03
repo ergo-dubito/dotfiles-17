@@ -21,6 +21,8 @@ I plan to write an installation script in the future.
 
 ### Vim
 
+#### Plugins
+
 Most of my vim plugins are git submodules, loaded automatically by the [pathogen](https://github.com/tpope/vim-pathogen) plugin from the vim/[bundle](https://github.com/3xp0n3nt/dotfiles/tree/master/vim/bundle) subdirectory. Interestingly, pathogen itself is a git submodule inside vim/[bundle](https://github.com/3xp0n3nt/dotfiles/tree/master/vim/bundle). You can learn more [here](https://github.com/tpope/vim-pathogen/blob/master/README.markdown). The author of pathogen, [Tim Pope](http://tpo.pe), calls this setup "getting crazy." And he doesn't like to get crazy. But I do ;-).
 
 To update all of vim's submodule plugins at once:
@@ -30,7 +32,7 @@ cd dotfiles
 git submodule foreach git pull
 ```
 
-To add a new vim plugin as a git submodule (assuming it's hosted on github.com):
+To install a new vim plugin as a git submodule into dotfiles/vim/bundle/ (assuming it's hosted on github.com):
 
 ```
 cd dotfiles
