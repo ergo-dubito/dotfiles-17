@@ -30,6 +30,19 @@ cd dotfiles
 git submodule foreach git pull
 ```
 
+To add a new vim plugin as a git submodule (assuming it's hosted on github.com):
+
+```
+cd dotfiles
+git submodule add git://github.com/[user-name]/[repository-name] vim/bundle/[desired-plugin-directory-name]
+```
+
+.vimrc is configured to allow itself to be quickly edited and re-loaded from within vim using the following keystrokes (in normal mode):
+
+Edit .vimrc in a split window: ```,ev```
+Save and close .vimrc ```:wq```
+Source .vimrc (re-load with latest changes): ```,sv```
+
 ### Git
 
 ```gitignore_global``` cannot be displayed properly in the GitHub preview window ever since I added two literal ```^M``` (aka ```\r```, or carriage return) characters to the OS X ```Icon```
