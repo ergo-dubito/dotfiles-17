@@ -4,9 +4,6 @@ export PATH="/usr/local/bin:$PATH"
 # airport
 export PATH="$PATH:/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources"
 
-# eclimd
-alias eclimd='/Applications/eclipse/eclimd'
-
 # perlbrew
 export PATH="$PATH:~/perl5/perlbrew/bin"
 source ~/perl5/perlbrew/etc/bashrc
