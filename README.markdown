@@ -37,11 +37,17 @@ cd dotfiles
 git submodule add git://github.com/[user-name]/[repository-name] vim/bundle/[desired-plugin-directory-name]
 ```
 
+#### .vimrc
+
 .vimrc is configured to allow itself to be quickly edited and re-loaded from within vim using the following keystrokes (in normal mode):
 
-Edit .vimrc in a split window: ```,ev```
-Save and close .vimrc ```:wq```
-Source .vimrc (re-load with latest changes): ```,sv```
+```,ev``` Edit .vimrc in a split window.
+
+```:wq``` Save and close .vimrc.
+
+```,sv``` Source .vimrc (re-load with latest changes).
+
+This allows you to immediately see the effects of a change to .vimrc in your current vim session.
 
 ### Git
 
