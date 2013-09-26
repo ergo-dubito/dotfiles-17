@@ -17,3 +17,6 @@ export VISUAL=vim
 
 # MacPorts
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
+# OpenGL Profiler
+export GL_ENABLE_DEBUG_ATTACH YES
