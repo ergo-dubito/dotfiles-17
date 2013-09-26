@@ -52,3 +52,6 @@ tags
 .idea/
 *.iml
 *.iws
+
+# Android
+gen/
