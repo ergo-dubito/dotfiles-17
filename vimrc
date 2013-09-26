@@ -107,19 +107,12 @@ setlocal spell spelllang=en_us
 " Toggle spell check and display the result in the status bar
 nnoremap <leader>sp :set spell! spell?<cr> 
 
-" Clear any previous spellcheck highlighting
-" Note: These must come after any colorscheme settings
-hi clear SpellBad
-hi clear SpellCap
-hi clear SpellRare
-hi clear SpellLocal
-
 " Set new spellcheck highlighting
 " Note: These must come after any colorscheme settings
-hi SpellBad   term=underline cterm=underline ctermfg=red
-hi SpellCap   term=underline cterm=underline
-hi SpellRare  term=underline cterm=underline
-hi SpellLocal term=underline cterm=underline
+hi SpellBad   term=underline cterm=underline ctermbg=black ctermfg=red
+hi SpellCap   term=underline cterm=underline ctermbg=black ctermfg=yellow
+hi SpellRare  term=underline cterm=underline ctermbg=black ctermfg=magenta
+hi SpellLocal term=underline cterm=underline ctermbg=black ctermfg=cyan
 
 " -----------------------------------------------------------------------------
 " -- End Spelling Settings ----------------------------------------------------
