@@ -20,3 +20,6 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 # OpenGL Profiler
 export GL_ENABLE_DEBUG_ATTACH YES
+
+# Disable crash reporter
+launchctl unload /System/Library/LaunchDaemons/com.apple.ReportCrash.Root.plist &>/dev/null
