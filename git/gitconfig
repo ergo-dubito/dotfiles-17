@@ -12,5 +12,8 @@
   default = simple
 [merge]
   ff = false
+	tool = vimdiff
 [github]
 	user = 3xp0n3nt
+[mergetool]
+	prompt = false
