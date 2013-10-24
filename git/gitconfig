@@ -1,6 +1,8 @@
 [core]
   excludesfile = ~/.gitignore_global
   mergeoptions = --no-edit
+	autocrlf = input
+	safecrlf = true
 [alias]
   history = log --follow --all -p
   showlastmerge = !git log $(git merge-base --octopus $(git log -1 --merges --pretty=format:%P))..$(git log -1 --merges --pretty=format:%H) --boundary --graph --pretty=oneline --abbrev-commit
