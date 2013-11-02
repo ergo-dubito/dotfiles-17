@@ -51,7 +51,19 @@ tags
 # IntelliJ IDEA
 .idea/
 *.iml
+*.ipr
 *.iws
+proguard_logs/
 
 # Android
+bin/
 gen/
+libs/
+*.dex
+*.apk
+*.ap_
+
+# Eclipse
+.classpath
+.project
+proguard/
