@@ -15,6 +15,8 @@
 [merge]
   ff = false
   tool = fugitive
+	conflictstyle = diff3
+	keepBackup = false
 [github]
   user = 3xp0n3nt
 [mergetool]

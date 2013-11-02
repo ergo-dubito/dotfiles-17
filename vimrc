@@ -37,6 +37,12 @@ set number          " Show line numbers in the left margin
 set shortmess+=I    " Disable intro screen on startup
 syntax on           " Enable syntax highlighting
 
+" Simplify vimdiff color scheme
+highlight DiffAdd    cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
+highlight DiffDelete cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
+highlight DiffChange cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
+highlight DiffText   cterm=bold ctermfg=10 ctermbg=88 gui=none guifg=bg guibg=Red
+
 " Customize the status bar
 set statusline =[%F]%m%r\ %=
 set statusline +=%{fugitive#statusline()} " Fugitive / Git
