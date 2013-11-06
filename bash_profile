@@ -23,3 +23,8 @@ export GL_ENABLE_DEBUG_ATTACH YES
 
 # Disable crash reporter
 launchctl unload /System/Library/LaunchDaemons/com.apple.ReportCrash.Root.plist &>/dev/null
+
+# git completion
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
