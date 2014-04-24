@@ -36,7 +36,7 @@ To install a new vim plugin as a git submodule into dotfiles/vim/bundle/ (assumi
 
 ```
 cd dotfiles
-git submodule add git://github.com/[user-name]/[repository-name] vim/bundle/[desired-plugin-directory-name]
+git submodule add git://github.com/[username]/[repository-name].git vim/bundle/[desired-plugin-directory-name]
 ```
 
 #### vimrc
