@@ -15,9 +15,6 @@ export VISUAL=vim
 # Source .extra if exists (personal settings not checked in with dotfiles)
 [[ -f ~/.extra ]] && source ~/.extra
 
-# MacPorts
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-
 # Enable OpenGL Profiler
 export GL_ENABLE_DEBUG_ATTACH YES
 
