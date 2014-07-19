@@ -25,3 +25,6 @@ launchctl unload /System/Library/LaunchDaemons/com.apple.ReportCrash.Root.plist 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+# Configure terminal prompt appearance
+export PS1='\u \W $ '
