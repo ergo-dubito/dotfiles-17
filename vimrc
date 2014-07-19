@@ -211,14 +211,15 @@ set wildmode=longest,list,full
 au FileType gitcommit set tw=72
 
 " Allow Command Key + jk0$ absolute navigation on soft-wrapped lines
-vmap <D-j> gj
-vmap <D-k> gk
-vmap <D-0> g0
-vmap <D-4> g$
-nmap <D-j> gj
-nmap <D-k> gk
-nmap <D-0> g0
-nmap <D-4> g$
+" Commented out as they conflict with vnoremap < <gv in .ideavimrc :'(
+"vmap <D-j> gj
+"vmap <D-k> gk
+"vmap <D-0> g0
+"vmap <D-4> g$
+"nmap <D-j> gj
+"nmap <D-k> gk
+"nmap <D-0> g0
+"nmap <D-4> g$
 
 " -----------------------------------------------------------------------------
 " -- End Miscellaneous Settings -----------------------------------------------

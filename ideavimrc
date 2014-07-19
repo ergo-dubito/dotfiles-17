@@ -1,1 +1,3 @@
 source ~/.vimrc
+vnoremap > >gv
+vnoremap < <gv
