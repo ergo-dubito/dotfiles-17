@@ -16,9 +16,9 @@
   tool = fugitive
 	conflictstyle = diff3
 	keepBackup = false
-[github]
-  user = 3xp0n3nt
 [mergetool]
   prompt = false
 [mergetool "fugitive"]
   cmd = vim -f -c \"Gdiff\" \"$MERGED\"
+[include]
+  path = ~/.gitconfig_local
