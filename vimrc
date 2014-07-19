@@ -186,10 +186,6 @@ if has('autocmd')
   autocmd GUIEnter * set visualbell t_vb=
 endif
 
-" Force myself to use ii for escape: it'll work until I want to go skiing... =)
-inoremap ii <esc>
-inoremap <esc> <nop>
-
 " Show vim error messages
 set debug=msg
 
