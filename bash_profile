@@ -1,14 +1,14 @@
 # Prefer updated software in /usr/local/bin over system defaults in /usr/bin.
 export PATH="/usr/local/bin:$PATH"
 
-# airport
+# Make airport command available
 export PATH="$PATH:/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources"
 
 # perlbrew
 export PATH="$PATH:~/perl5/perlbrew/bin"
 source ~/perl5/perlbrew/etc/bashrc
 
-# vim
+# Make Vim the default editor
 export EDITOR=vim
 export VISUAL=vim
 
@@ -18,13 +18,13 @@ export VISUAL=vim
 # MacPorts
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
-# OpenGL Profiler
+# Enable OpenGL Profiler
 export GL_ENABLE_DEBUG_ATTACH YES
 
 # Disable crash reporter
 launchctl unload /System/Library/LaunchDaemons/com.apple.ReportCrash.Root.plist &>/dev/null
 
-# git completion
+# Load git completion script if it exists
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
