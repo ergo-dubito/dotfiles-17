@@ -13,7 +13,6 @@
 [push]
   default = simple
 [merge]
-  ff = false
   tool = fugitive
 	conflictstyle = diff3
 	keepBackup = false
