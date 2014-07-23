@@ -1,6 +1,48 @@
 #!/bin/bash
 
-# OS X settings
+# OS X Mavericks settings
 
 # Disable all "This application was downloaded from the internet..." warnings
+#
+# To undo this setting, run:
+#
+# defaults write com.apple.LaunchServices LSQuarantine -bool YES
+#
 defaults write com.apple.LaunchServices LSQuarantine -bool NO
+
+# Allow disabling of internal MacBook screen when connected to an internal
+# display. To use, connect external monitor, restart, close MacBook lid until
+# the login screen appears, then open the lid.
+#
+# To undo this setting, run:
+#
+# sudo nvram -d boot-args
+#
+sudo nvram boot-args="iog=0x0"
+
+# Mute startup sound.
+#
+# To undo this setting, run:
+#
+# sudo nvram -d SystemAudioVolume
+#
+sudo nvram SystemAudioVolume="%00"
+
+# Change LocalHostName to value specified by $LOCALHOSTNAME in ~/.localhostname.
+# WARNING: DO NOT SET HostName, see http://apple.stackexchange.com/questions/30552/os-x-computer-name-not-matching-what-shows-on-terminal.
+if [ -f ~/.localhostname ]; then
+  . ~/.localhostname
+  sudo scutil --set LocalHostName "$LOCALHOSTNAME"
+  sudo killall -KILL Finder #Restart Finder to update changes.
+  dscacheutil -flushcache # Flush the DNS cache.
+fi
+
+# Change ComputerName to value specified by $COMPUTERNAME in ~/.computername.
+if [ -f ~/.computername ]; then
+  . ~/.computername
+  sudo scutil --set ComputerName "$COMPUTERNAME"
+  dscacheutil -flushcache # Flush the DNS cache.
+fi
+
+# Make sure any changes update immediately by restarting Finder.
+sudo killall -KILL Finder
