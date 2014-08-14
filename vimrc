@@ -167,7 +167,7 @@ inoremap <right> <nop>
 inoremap <up>    <nop>
 
 " Yank, delete, and paste use the system clipboard
-set clipboard=unnamed 
+set clipboard=unnamed
 
 " Edit vimrc in vertical split to the right of the current window 
 nnoremap <leader>ev :rightbelow vsplit $MYVIMRC<cr>
