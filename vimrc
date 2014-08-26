@@ -221,6 +221,9 @@ au FileType gitcommit set tw=72
 "nmap <D-0> g0
 "nmap <D-4> g$
 
+" Make diffs split windows vertically
+:set diffopt+=vertical
+
 " -----------------------------------------------------------------------------
 " -- End Miscellaneous Settings -----------------------------------------------
 " -----------------------------------------------------------------------------

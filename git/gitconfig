@@ -19,6 +19,6 @@
 [mergetool]
   prompt = false
 [mergetool "fugitive"]
-  cmd = vim -f -c \"Gdiff\" \"$MERGED\"
+  cmd = vim -f -c \"Gvdiff\" \"$MERGED\"
 [include]
   path = ~/.gitconfig_local
