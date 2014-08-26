@@ -1,3 +1,19 @@
+" Use ~/.vimrc settings first.
 source ~/.vimrc
+
+" Keep blocks of text selected in visual mode after indentation.
+" This is a workaround for a bug that causes the dot operator to not repeat
+" indentation of a block of highlighted text after using < or >.
+" See youtrack.jetbrains.com/issue/VIM-705 for more information.
 vnoremap > >gv
 vnoremap < <gv
+
+" Use the system clipboard for yanking & pasting. This is a workaround for
+" "set clipboard=unnamed" & "set clipboard=unnamedplus" from .vimrc not working
+" in IdeaVim.
+"nnoremap y "+y
+"vnoremap y "+y
+"nnoremap p "+p
+"vnoremap p "+p
+"nnoremap P "+P
+"vnoremap P "+P
