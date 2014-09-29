@@ -90,8 +90,8 @@ set textwidth=79 " Hard-wrap lines longer than 79 characters (insert newlines)
 
 set hlsearch   " Highlight search results
 set ignorecase " Case insensitive searches
-set incsearch  " Searches as I type
 set smartcase  " Only search terms with uppercase characters are case sensitive
+set incsearch  " Searches as I type
 set wrapscan   " Searches wrap at end of file
 
 " Toggle search highlighting and display the result in the status bar
