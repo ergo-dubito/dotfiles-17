@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# OS X Mavericks settings
+# OS X Yosemite settings
 
 # Disable all "This application was downloaded from the internet..." warnings
 #
@@ -18,15 +18,7 @@ defaults write com.apple.LaunchServices LSQuarantine -bool NO
 #
 # sudo nvram -d boot-args
 #
-sudo nvram boot-args="iog=0x0"
-
-# Mute startup sound.
-#
-# To undo this setting, run:
-#
-# sudo nvram -d SystemAudioVolume
-#
-sudo nvram SystemAudioVolume="%00"
+sudo nvram boot-args=niog=1
 
 # Change LocalHostName to value specified by $LOCALHOSTNAME in ~/.localhostname.
 # WARNING: DO NOT SET HostName, see http://apple.stackexchange.com/questions/30552/os-x-computer-name-not-matching-what-shows-on-terminal.
