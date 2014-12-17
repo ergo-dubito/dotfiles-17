@@ -2,14 +2,6 @@
 
 # OS X Yosemite settings
 
-# Disable all "This application was downloaded from the internet..." warnings
-#
-# To undo this setting, run:
-#
-# defaults write com.apple.LaunchServices LSQuarantine -bool YES
-#
-defaults write com.apple.LaunchServices LSQuarantine -bool NO
-
 # Allow disabling of internal MacBook screen when connected to an internal
 # display. To use, connect external monitor, restart, close MacBook lid until
 # the login screen appears, then open the lid.
