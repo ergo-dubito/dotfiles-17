@@ -32,3 +32,8 @@ fi
 
 # Configure terminal prompt appearance
 export PS1='\u \W $ '
+
+# Enable bash-completion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
