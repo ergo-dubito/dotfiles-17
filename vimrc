@@ -228,6 +228,9 @@ au FileType gitcommit set tw=72
 " Make diffs split windows vertically
 :set diffopt+=vertical
 
+" CTRL + X / CTRL + A decrements / increments octal, hexadecimal, and alphanumeric characters, as well as decimal numbers.
+:set nf=octal,hex,alpha
+
 " -----------------------------------------------------------------------------
 " -- End Miscellaneous Settings -----------------------------------------------
 " -----------------------------------------------------------------------------
