@@ -55,7 +55,7 @@ This allows you to immediately see the effects of a change to .vimrc in your cur
 
 gitconfig:
 
-~/.gitconfig_local will be included in gitconfig if it exists. This is where you can put personal settings that should not be committed to a public gitconfig, if other people will be using it (such as this one). For instance:
+~/.gitconfig_local will be included in gitconfig if it exists. This is where you can put personal settings that should not be committed to a public gitconfig (such as this one). For instance:
 
 ```
 [user]
