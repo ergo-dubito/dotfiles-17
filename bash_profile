@@ -1,3 +1,7 @@
+
+# Set JAVA_HOME to satisfy Maven
+export JAVA_HOME=$(/usr/libexec/java_home)
+
 # Prefer updated software in /usr/local/bin over system defaults in /usr/bin.
 export PATH="/usr/local/bin:$PATH"
 
