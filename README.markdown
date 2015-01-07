@@ -82,7 +82,7 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 ### Notes
 
-Many of these dotfiles are customized for OS X Mavericks. You may need to modify them for your specific os.
+Many of these dotfiles are customized for OS X Yosemite. You may need to modify them for your specific os.
 
 My collection of dotfiles is still in its infancy. I am inspired, however, by
 Mathias Bynens' impressive [collection](https://github.com/mathiasbynens/dotfiles) of collaborative dotfiles.
