@@ -53,6 +53,18 @@ This allows you to immediately see the effects of a change to .vimrc in your cur
 
 ### Git
 
+gitconfig:
+
+~/.gitconfig_local will be included in gitconfig if it exists. This is where you can put personal settings that should not be committed to a public gitconfig, if other people will be using it (such as this one). For instance:
+
+```
+[user]
+  name = Aaron Mahan
+  email = aaron@forerunnergames.com
+```
+
+gitignore_global:
+
 ```gitignore_global``` cannot be displayed properly in the GitHub preview window ever since I added two literal ```^M``` (aka ```\r```, or carriage return) characters to the OS X ```Icon```
 rule, so that git will correctly ignore OS X-generated ```Icon\r``` files (that deceptively appear as
 ```Icon?```'s). You can check out [this](http://blog.bitfluent.com/post/173740409/ignoring-icon-in-gitignore) blog post for more
