@@ -14,8 +14,8 @@
   default = simple
 [merge]
   tool = fugitive
-	conflictstyle = diff3
-	keepBackup = false
+  conflictstyle = diff3
+  keepBackup = false
 [mergetool]
   prompt = false
 [mergetool "fugitive"]
