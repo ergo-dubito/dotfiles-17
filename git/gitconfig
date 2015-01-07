@@ -18,6 +18,7 @@
   keepBackup = false
 [mergetool]
   prompt = false
+  keepBackup = false
 [mergetool "fugitive"]
   cmd = vim -f -c \"Gvdiff\" \"$MERGED\"
 [include]
