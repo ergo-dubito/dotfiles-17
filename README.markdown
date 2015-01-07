@@ -59,8 +59,8 @@ gitconfig:
 
 ```
 [user]
-  name = Aaron Mahan
-  email = aaron@forerunnergames.com
+  name = First Last
+  email = your@email.com
 ```
 
 gitignore_global:
