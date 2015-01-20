@@ -34,7 +34,6 @@ Icon
 *.ear
 *.gz
 *.iso
-*.jar
 *.rar
 *.tar
 *.war
