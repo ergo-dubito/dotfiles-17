@@ -202,8 +202,16 @@ noremap <c-s-tab> :tabprevious<cr>
 noremap <c-t> :tabnew<cr>
 
 " Put vim swap files in one central directory so they don't clutter the
-" working directory (helps with git repositories)
-set directory^=$HOME/.vim_swap//
+" working directory (helps with git repositories & network drives)
+set directory=$HOME/.vim/_swap//
+
+" Enable backup files and set their location
+set backup
+set backupdir=$HOME/.vim/_backup//
+
+" Enable undo files and set their location
+set undofile
+set undodir=$HOME/.vim/_undo//
 
 " Show command line autocomplete options in the status bar
 set wildmenu
