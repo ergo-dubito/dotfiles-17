@@ -1,12 +1,2 @@
 " Use ~/.vimrc settings first.
 source ~/.vimrc
-
-" Use the system clipboard for yanking & pasting. This is a workaround for
-" "set clipboard=unnamed" & "set clipboard=unnamedplus" from .vimrc not working
-" in IdeaVim.
-"nnoremap y "+y
-"vnoremap y "+y
-"nnoremap p "+p
-"vnoremap p "+p
-"nnoremap P "+P
-"vnoremap P "+P
