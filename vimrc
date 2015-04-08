@@ -98,8 +98,8 @@ set wrapscan   " Searches wrap at end of file
 nnoremap <leader>hl :set hlsearch! hlsearch?<cr> 
 
 " Make * and # searches case sensitive only with uppercase characters
-:nnoremap * /\<<C-R>=expand('<cword>')<CR>\><CR>
-:nnoremap # ?\<<C-R>=expand('<cword>')<CR>\><CR>
+":nnoremap * /\<<C-R>=expand('<cword>')<CR>\><CR>
+":nnoremap # ?\<<C-R>=expand('<cword>')<CR>\><CR>
 
 " -----------------------------------------------------------------------------
 " -- End Search Settings ------------------------------------------------------
