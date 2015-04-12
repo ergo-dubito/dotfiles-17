@@ -1,4 +1,3 @@
-
 # Set JAVA_HOME to satisfy Maven
 export JAVA_HOME=$(/usr/libexec/java_home)
 
@@ -37,3 +36,7 @@ export PS1='\u \W $ '
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
+
+# Make Android SDK tools & platform tools available (such as adb & fastboot)
+# Make sure to define ANDROID_SDK in ~/.extra (absolute path to android sdk)
+export PATH=${PATH}:${ANDROID_SDK}/platform-tools:${ANDROID_SDK}/tools
