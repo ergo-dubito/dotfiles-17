@@ -78,6 +78,15 @@ set shiftwidth=2 " Indents are 2 spaces wide
 set tabstop=2    " Tabs are 2 spaces wide
 set textwidth=79 " Hard-wrap lines longer than 79 characters (insert newlines)
 
+" Automatically strip all trailing whitespace on write
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+
 " -----------------------------------------------------------------------------
 " -- End Formatting Settings --------------------------------------------------
 " -----------------------------------------------------------------------------
