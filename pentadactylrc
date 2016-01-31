@@ -2,5 +2,4 @@
 set guioptions+=T
 
 " Disable pentadactyl on the following websites:
-autocmd LocationChange fireflyapp.com :normal! <C-z>
-autocmd LocationChange lumosity.com :normal! <C-z>
+autocmd LocationChange example.com :normal! <C-z>
