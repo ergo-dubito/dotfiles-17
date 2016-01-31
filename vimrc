@@ -8,7 +8,7 @@
 set nocompatible
 
 " Map <leader> key from backslash to comma to keep fingers on home row
-let mapleader = "," 
+let mapleader = ","
 
 " Load pathogen plugin, which will load all other plugins.
 runtime bundle/vim-pathogen/autoload/pathogen.vim
@@ -29,7 +29,7 @@ execute pathogen#helptags()
 
 colorscheme elflord " Set the color scheme to the built-in 'elflord' scheme
 set cmdheight=2     " Set the height of the command line to 2
-set colorcolumn=81  " Display a red right-margin at column 81 
+set colorcolumn=81  " Display a red right-margin at column 81
 set guioptions-=T   " Hide MacVim gui toolbar
 set laststatus=2    " Always show the status bar
 set mousehide       " Hide mouse while typing
@@ -104,7 +104,7 @@ set incsearch  " Searches as I type
 set wrapscan   " Searches wrap at end of file
 
 " Toggle search highlighting and display the result in the status bar
-nnoremap <leader>hl :set hlsearch! hlsearch?<cr> 
+nnoremap <leader>hl :set hlsearch! hlsearch?<cr>
 
 " Make * and # searches case sensitive only with uppercase characters
 ":nnoremap * /\<<C-R>=expand('<cword>')<CR>\><CR>
@@ -124,7 +124,7 @@ nnoremap <leader>hl :set hlsearch! hlsearch?<cr>
 setlocal spell spelllang=en_us
 
 " Toggle spell check and display the result in the status bar
-nnoremap <leader>sp :set spell! spell?<cr> 
+nnoremap <leader>sp :set spell! spell?<cr>
 
 " Set new spellcheck highlighting
 " Note: These must come after any colorscheme settings
@@ -182,7 +182,7 @@ inoremap <up>    <nop>
 " Yank, delete, and paste use the system clipboard
 set clipboard=unnamed
 
-" Edit vimrc in vertical split to the right of the current window 
+" Edit vimrc in vertical split to the right of the current window
 nnoremap <leader>ev :rightbelow vsplit $MYVIMRC<cr>
 
 " Source vimrc to make any changes to itself take effect
@@ -246,7 +246,7 @@ au FileType gitcommit set tw=72
 :set diffopt+=vertical
 
 " CTRL + X / CTRL + A decrements / increments octal, hexadecimal, and alphanumeric characters, as well as decimal numbers.
-:set nf=octal,hex,alpha
+":set nf=octal,hex,alpha
 
 " -----------------------------------------------------------------------------
 " -- End Miscellaneous Settings -----------------------------------------------
@@ -320,7 +320,7 @@ sunmap e
 let g:EclimTaglistEnabled=0
 
 " Auto-open the project tree view if the current file is in an Eclipse project
-let g:EclimProjectTreeAutoOpen=1 
+let g:EclimProjectTreeAutoOpen=1
 
 " Expand the project tree automatically when it is opened
 let g:EclimProjectTreeExpandPathOnOpen=1
