@@ -14,10 +14,6 @@
 	path = vim/bundle/Command-T
 	url = https://github.com/wincent/Command-T.git
   branch = master
-[submodule "vim/bundle/vim-git"]
-	path = vim/bundle/vim-git
-	url = https://github.com/tpope/vim-git.git
-  branch = master
 [submodule "vim/bundle/blogit"]
 	path = vim/bundle/blogit
 	url = git://github.com/vim-scripts/blogit.vim
@@ -26,3 +22,6 @@
 	path = vim/bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
   branch = master
+[submodule "vim/bundle/vim-git"]
+	path = vim/bundle/vim-git
+	url = git://github.com/tpope/vim-git.git
