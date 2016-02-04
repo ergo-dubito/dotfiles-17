@@ -10,10 +10,6 @@
 	path = vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
   branch = master
-[submodule "vim/bundle/Command-T"]
-	path = vim/bundle/Command-T
-	url = https://github.com/wincent/Command-T.git
-  branch = master
 [submodule "vim/bundle/blogit"]
 	path = vim/bundle/blogit
 	url = git://github.com/vim-scripts/blogit.vim

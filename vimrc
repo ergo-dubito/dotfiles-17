@@ -253,46 +253,6 @@ au FileType gitcommit set tw=72
 " -----------------------------------------------------------------------------
 
 
-
-" -----------------------------------------------------------------------------
-" -- Begin CommandT Plugin Settings -------------------------------------------
-" -----------------------------------------------------------------------------
-
-" Explicitly create the default mappings (fixes bug after remapping leader key)
-nnoremap <silent> <Leader>t :CommandT<CR>
-nnoremap <silent> <Leader>b :CommandTBuffer<CR>
-
-" <esc> key exits CommandT
-let g:CommandTCancelMap='<esc>'
-
-" Auto-rebuild the index when a new file is created, so it can be found
-if has('autocmd')
-  augroup NFUCT
-      autocmd!
-      autocmd BufWritePre * call NFUCTset()
-  augroup END
-  function! NFUCTset()
-      if !filereadable(expand('%'))
-          augroup NFUCT
-              autocmd BufWritePost * call NFUCT()
-          augroup END
-      endif
-  endfunction
-  function! NFUCT()
-      augroup NFUCT
-          autocmd!
-          autocmd BufWritePre * call NFUCTset()
-      augroup END
-      CommandTFlush
-  endfunction
-endif
-
-" -----------------------------------------------------------------------------
-" -- End CommandT Plugin Settings ---------------------------------------------
-" -----------------------------------------------------------------------------
-
-
-
 " -----------------------------------------------------------------------------
 " -- Begin CamelCase Plugin Settings ------------------------------------------
 " -----------------------------------------------------------------------------
@@ -308,29 +268,4 @@ sunmap e
 
 " -----------------------------------------------------------------------------
 " -- End CamelCase Plugin Settings --------------------------------------------
-" -----------------------------------------------------------------------------
-
-
-
-" -----------------------------------------------------------------------------
-" -- Begin Eclim Plugin Settings ----------------------------------------------
-" -----------------------------------------------------------------------------
-
-" Disable broken eclim taglist (use default taglist instead)
-let g:EclimTaglistEnabled=0
-
-" Auto-open the project tree view if the current file is in an Eclipse project
-let g:EclimProjectTreeAutoOpen=1
-
-" Expand the project tree automatically when it is opened
-let g:EclimProjectTreeExpandPathOnOpen=1
-
-" Use the same project tree in all tabs
-let g:EclimProjectTreeSharedInstance=1
-
-" Use tabnew instead of split for new action
-let g:EclimProjectTreeActions = [ {'pattern': '.*', 'name': 'Tab', 'action': 'tabnew'} ]
-
-" -----------------------------------------------------------------------------
-" -- End Eclim Plugin Settings ------------------------------------------------
 " -----------------------------------------------------------------------------
