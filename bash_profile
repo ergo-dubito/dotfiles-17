@@ -40,3 +40,6 @@ fi
 # Make Android SDK tools & platform tools available (such as adb & fastboot)
 # Make sure to define ANDROID_SDK in ~/.extra (absolute path to android sdk)
 [[ -n "$ANDROID_SDK" ]] && export PATH=${PATH}:${ANDROID_SDK}/platform-tools:${ANDROID_SDK}/tools
+
+# Disable CTRL + d logging out of terminal sessions
+set -o ignoreeof
