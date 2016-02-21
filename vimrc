@@ -72,11 +72,12 @@ filetype plugin on " Enable filetype-specific plugins
 " -- Begin Formatting Settings ------------------------------------------------
 " -----------------------------------------------------------------------------
 
-set backspace=2  " Allow backspace over autoindent, line break, and insert
-set expandtab    " Expand tabs to spaces
-set shiftwidth=2 " Indents are 2 spaces wide
-set tabstop=2    " Tabs are 2 spaces wide
-set textwidth=79 " Hard-wrap lines longer than 79 characters (insert newlines)
+set backspace=2   " Allow backspace over autoindent, line break, and insert
+set expandtab     " Expand tabs to spaces
+set shiftwidth=2  " Indents are 2 spaces wide
+set tabstop=2     " Tabs are 2 spaces wide
+set textwidth=79  " Hard-wrap lines longer than 79 characters (insert newlines)
+set tabpagemax=99 " Allow 99 tabs to be opened simultaneously (default is 10).
 
 " Automatically strip all trailing whitespace on write
 fun! <SID>StripTrailingWhitespaces()
