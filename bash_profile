@@ -7,6 +7,10 @@ export PATH="/usr/local/bin:$PATH"
 # Make airport command available
 export PATH="$PATH:/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources"
 
+# python
+PYTHONPATH="$HOME/Library/Python/2.7/lib/python/site-packages:$PYTHONPATH"
+export PYTHONPATH
+
 # perlbrew
 export PATH="$PATH:~/perl5/perlbrew/bin"
 source ~/perl5/perlbrew/etc/bashrc
