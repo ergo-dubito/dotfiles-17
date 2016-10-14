@@ -72,6 +72,7 @@ filetype plugin on " Enable filetype-specific plugins
 " -- Begin Formatting Settings ------------------------------------------------
 " -----------------------------------------------------------------------------
 
+set autoindent    " Indent all lines when formatting a paragraph
 set backspace=2   " Allow backspace over autoindent, line break, and insert
 set expandtab     " Expand tabs to spaces
 set shiftwidth=2  " Indents are 2 spaces wide
