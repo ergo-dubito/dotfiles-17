@@ -7,6 +7,7 @@
 [alias]
   history = log --follow --all -p
   showlastmerge = !git log $(git merge-base --octopus $(git log -1 --merges --pretty=format:%P))..$(git log -1 --merges --pretty=format:%H) --boundary --graph --pretty=oneline --abbrev-commit
+  created = !sh -c 'git log --diff-filter=A --follow --format=%aD -- $1 | tail -1' -
 [pager]
   log  = ~/dotfiles/git/diff-highlight | less
   show = ~/dotfiles/git/diff-highlight | less
