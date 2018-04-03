@@ -10,10 +10,6 @@
 	path = vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
   branch = master
-[submodule "vim/bundle/blogit"]
-	path = vim/bundle/blogit
-	url = git://github.com/vim-scripts/blogit.vim
-  branch = master
 [submodule "vim/bundle/vim-surround"]
 	path = vim/bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
