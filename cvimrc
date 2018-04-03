@@ -1,0 +1,7 @@
+map <C-d> scrollPageDown
+map <C-u> scrollPageUp
+map d closeTab
+map h previousTab
+map l nextTab
+
+set smoothscroll
