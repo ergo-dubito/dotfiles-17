@@ -26,14 +26,18 @@ create_dotfile ~/.extra
 create_dotfile ~/.gitconfig_local
 
 printf "\nConfiguring Shell Environment (sourcing ~/.bash_profile)...\n"
-source $THIS_DIR/.bash_profile
+source .bash_profile
 printf "Done.\n\n"
 
 printf "\nConfiguring MacOS (sourcing ~/.osx)...\n"
-source $THIS_DIR/.osx
+source .osx
 printf "Done.\n\n"
 
 printf "\nDotfiles have been installed. Don't forget to configure any of the following local dotfiles with your personal information:\n\n"
 
 printf "~/.extra (Git authorship and any other env vars containing personal info.)\n"
 printf "~/.gitconfig_local (Included in .gitconfig, for the [user] block and any other personal info.)\n\n"
+
+printf "Installing Homebrew & packages...\n"
+source dotfiles/brew.sh
+printf "Done.\n\n"
