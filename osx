@@ -2,20 +2,12 @@
 
 # MacOS High Sierra settings
 
-# Change LocalHostName to value specified by $LOCALHOSTNAME in ~/.localhostname.
-# WARNING: DO NOT SET HostName, see http://apple.stackexchange.com/questions/30552/os-x-computer-name-not-matching-what-shows-on-terminal.
-if [ -f ~/.localhostname ]; then
-  . ~/.localhostname
-  sudo scutil --set LocalHostName "$LOCALHOSTNAME"
-  dscacheutil -flushcache
-fi
+[[ -v $COMPUTERNAME ]] && sudo scutil --set ComputerName "$COMPUTERNAME"
+[[ -v $LOCALHOSTNAME ]] && sudo scutil --set LocalHostName "$LOCALHOSTNAME"
+[[ -v $HOSTNAME ]] && sudo scutil --set HostName "$HOSTNAME"
 
-# Change ComputerName to value specified by $COMPUTERNAME in ~/.computername.
-if [ -f ~/.computername ]; then
-  . ~/.computername
-  sudo scutil --set ComputerName "$COMPUTERNAME"
-  dscacheutil -flushcache
-fi
+# Flush the DNS cache if we set any of these 3 names.
+[[ -v "$COMPUTERNAME" || -v  "$LOCALHOSTNAME" || -v  "$HOSTNAME" ]] && dscacheutil -flushcache
 
 # Show full file path in Finder title bar.
 #
