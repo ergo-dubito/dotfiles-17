@@ -28,17 +28,17 @@ export GL_ENABLE_DEBUG_ATTACH YES
 # Disable crash reporter
 launchctl unload /System/Library/LaunchDaemons/com.apple.ReportCrash.Root.plist &>/dev/null
 
-# Load git completion script if it exists
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
-fi
-
 # Configure terminal prompt appearance
 export PS1='\u \W $ '
 
 # Enable bash-completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
+fi
+
+# Git Completion
+if [ -f $(brew --prefix)/etc/bash_completion.d/git-completion.bash ]; then
+  . $(brew --prefix)/etc/bash_completion.d/git-completion.bash
 fi
 
 # Make Android SDK tools & platform tools available (such as adb & fastboot)
