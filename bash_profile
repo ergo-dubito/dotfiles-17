@@ -45,6 +45,12 @@ if [ -f $(brew --prefix)/etc/bash_completion.d/git-completion.bash ]; then
   . $(brew --prefix)/etc/bash_completion.d/git-completion.bash
 fi
 
+# Git
+[[ -v  "$GIT_AUTHOR_NAME" ]] && export GIT_AUTHOR_NAME
+[[ -v  "$GIT_AUTHOR_EMAIL" ]] && export GIT_AUTHOR_EMAIL
+[[ -v  "$GIT_COMMITTER_NAME" ]] && export GIT_COMMITTER_NAME
+[[ -v  "$GIT_COMMITTER_EMAIL" ]] && export GIT_COMMITTER_EMAIL
+
 # Make Android SDK tools & platform tools available (such as adb & fastboot)
 # Make sure to define ANDROID_SDK in ~/.extra (absolute path to android sdk)
 [[ -n "$ANDROID_SDK" ]] && export PATH=${PATH}:${ANDROID_SDK}/platform-tools:${ANDROID_SDK}/tools
