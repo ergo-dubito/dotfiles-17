@@ -12,8 +12,10 @@ PYTHONPATH="$HOME/Library/Python/2.7/lib/python/site-packages:$PYTHONPATH"
 export PYTHONPATH
 
 # perlbrew
-export PATH="$PATH:~/perl5/perlbrew/bin"
-source ~/perl5/perlbrew/etc/bashrc
+if type "perlbrew" > /dev/null 2>&1; then
+  export PATH="$PATH:~/perl5/perlbrew/bin"
+  source ~/perl5/perlbrew/etc/bashrc
+fi
 
 # Make Vim the default editor
 export EDITOR=vim
