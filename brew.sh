@@ -22,6 +22,7 @@ brew install vim --with-override-system-vi # get system clipboard support
 brew cask install macvim --override-system-vim # get MacVim.app in /Applications
 brew install findutils --with-default-names # get cool 'find' options like -printf
 brew install duti # easy custom file associations
+brew cask install iterm2
 brew cask install java8 # Java 8 development
 brew cask install google-chrome # Web browsing, why not? :)
 brew cask install slack # You shouldn't work alone...
@@ -35,6 +36,7 @@ exec bash
 duti settings.duti
 
 # Put freshly brewed applications in the Dock.
+add_to_dock /Applications/iTerm.app
 add_to_dock /Applications/Google\ Chrome.app
 add_to_dock /Applications/MacVim.app
 add_to_dock /Applications/Slack.app
