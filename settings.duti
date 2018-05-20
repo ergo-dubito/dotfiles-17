@@ -14,5 +14,6 @@ org.vim.MacVim .md all
 org.vim.MacVim .gradle all
 org.vim.MacVim .vmoptions all
 org.vim.MacVim .dic all
+org.vim.MacVim .log all
 com.googlecode.iterm2 .sh all
 com.googlecode.iterm2 .bash all
