@@ -17,7 +17,7 @@ ln -s dotfiles/bash_profile .bash_profile
 ln -s dotfiles/cvimrc .cvimrc
 ln -s dotfiles/hushlogin .hushlogin
 ln -s dotfiles/ideavimrc .ideavimrc
-ln -s dotfiles/osx .osx
+ln -s dotfiles/macos .macos
 ln -s dotfiles/vimrc .vimrc
 
 printf "Done.\n\n"
@@ -29,8 +29,8 @@ printf "\nConfiguring Shell Environment (sourcing ~/.bash_profile)...\n"
 source .bash_profile
 printf "Done.\n\n"
 
-printf "\nConfiguring MacOS (sourcing ~/.osx)...\n"
-source .osx
+printf "\nConfiguring MacOS (sourcing ~/.macos)...\n"
+source .macos
 printf "Done.\n\n"
 
 printf "\nDotfiles have been installed. Don't forget to configure any of the following local dotfiles with your personal information:\n\n"
