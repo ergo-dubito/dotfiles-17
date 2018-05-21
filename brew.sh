@@ -10,6 +10,10 @@ THIS_DIR="${BASH_SOURCE%/*}"
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# The preliminaries
+brew update # Use the latest version of Homebrew.
+brew upgrade # Upgrade all installed packages.
+
 # Required to install various Casks.
 brew tap caskroom/cask
 brew tap caskroom/versions
@@ -26,6 +30,9 @@ brew cask install iterm2
 brew cask install java8 # Java 8 development
 brew cask install google-chrome # Web browsing, why not? :)
 brew cask install slack # You shouldn't work alone...
+
+# Remove outdated versions from the cellar.
+brew cleanup
 
 # Update system shell to use the new Bash.
 echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
