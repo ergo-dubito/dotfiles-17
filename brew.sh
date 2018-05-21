@@ -28,6 +28,7 @@ brew install findutils --with-default-names # Get cool 'find' options like -prin
 brew install duti # Easy custom file associations
 brew cask install iterm2 # Amazing replacement for Apple's Terminal
 brew cask install java8 # Java 8 development
+brew cask install android-sdk # Android development
 brew cask install google-chrome # Web browsing, why not? :)
 brew cask install slack # You shouldn't work alone...
 
