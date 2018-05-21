@@ -22,11 +22,11 @@ brew tap caskroom/versions
 brew install bash
 brew install bash-completion@2 # Bash tab completion
 brew install git
-brew install vim --with-override-system-vi # get system clipboard support
-brew cask install macvim --override-system-vim # get MacVim.app in /Applications
-brew install findutils --with-default-names # get cool 'find' options like -printf
-brew install duti # easy custom file associations
-brew cask install iterm2
+brew install vim --with-override-system-vi # Get system clipboard support
+brew cask install macvim --override-system-vim # Get MacVim.app in /Applications
+brew install findutils --with-default-names # Get cool 'find' options like -printf
+brew install duti # Easy custom file associations
+brew cask install iterm2 # Amazing replacement for Apple's Terminal
 brew cask install java8 # Java 8 development
 brew cask install google-chrome # Web browsing, why not? :)
 brew cask install slack # You shouldn't work alone...
