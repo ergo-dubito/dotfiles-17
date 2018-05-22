@@ -35,6 +35,12 @@ brew cask install slack # You shouldn't work alone...
 # Remove outdated versions from the cellar.
 brew cleanup
 
+# Create .android directory if it doesn't exist.
+# Create repositories.cfg if it doesn't exist.
+# (repositories.cfg is required to prevent a warning using android sdkmanager.)
+[[ -d "~/.android" ]] || mkdir ~/.android
+[[ -f "~/.android/repositories.cfg" ]] || touch ~/.android/repositories.cfg
+
 # Update system shell to use the new Bash.
 echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
 chsh -s /usr/local/bin/bash;
