@@ -47,6 +47,15 @@ cd dotfiles
 git submodule add git://github.com/[username]/[repository-name].git vim/bundle/[desired-plugin-directory-name]
 ```
 
+To remove a vim plugin as a git submodule:
+```
+rm -rf dotfiles/vim/bundle/[plugin-submodule-directory]
+```
+[remove submodule entry from dotfiles/.gitmodules]
+```
+rm -rf dotfiles/.git/modules/vim/bundle/[plugin-submodule-directory]
+```
+
 #### vimrc
 
 vimrc is configured to allow itself to be quickly edited and re-loaded from within vim using the following keystrokes (in normal mode):
