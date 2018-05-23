@@ -1,2 +1,8 @@
 " Use ~/.vimrc settings first.
 source ~/.vimrc
+
+" CamelCaseMotion plugin doesn't work with IdeaVim.
+map w w
+map b b
+map e e
+map ge ge
