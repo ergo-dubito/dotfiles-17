@@ -1,3 +1,29 @@
+" In cVim extension options, cVimrc section,
+" add these two lines:
+"
+" let configpath = '/Users/myusername/.cvimrc'
+" set localconfig
+"
+" Also, for this cVimrc setup to work,
+" you must allow access to file URL's in:
+"
+" Chrome > Settings > More Tools > Extentions > cVim >
+" Details > Allow access to file URL's
+"
+" Then source .cvimrc in Chrome:
+" :source /Users/myusername/.cvimrc
+
+unmap s
+unmap w
+unmap d
+unmap u
+unmap K
+unmap R
+unmap J
+unmap E
+unmap S
+unmap D
+
 map <C-d> scrollPageDown
 map <C-u> scrollPageUp
 map d closeTab
