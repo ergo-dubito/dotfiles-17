@@ -259,13 +259,14 @@ nmap <D-4> g$
 " -----------------------------------------------------------------------------
 
 " w, b, and e keys use camelCase motion
-" Note: ge is not implented
 map <silent> w <Plug>CamelCaseMotion_w
 map <silent> b <Plug>CamelCaseMotion_b
 map <silent> e <Plug>CamelCaseMotion_e
+map <silent> ge <Plug>CamelCaseMotion_ge
 sunmap w
 sunmap b
 sunmap e
+sunmap ge
 
 " -----------------------------------------------------------------------------
 " -- End CamelCase Plugin Settings --------------------------------------------
