@@ -41,3 +41,7 @@ printf "~/.gitconfig_local (Included in .gitconfig, for the [user] block and any
 printf "Installing Homebrew & packages...\n"
 source dotfiles/brew.sh
 printf "Done.\n\n"
+
+printf "Installing gems...\n"
+source dotfiles/gems.sh
+printf "Done.\n\n"
