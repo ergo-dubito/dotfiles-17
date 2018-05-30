@@ -26,6 +26,7 @@ brew install vim --with-override-system-vi # Get system clipboard support
 brew cask install macvim --override-system-vim # Get MacVim.app in /Applications
 brew install findutils --with-default-names # Get cool 'find' options like -printf
 brew install duti # Easy custom file associations
+brew install git-lfs # Track files larger than 50 MB efficiently with git
 brew cask install iterm2 # Amazing replacement for Apple's Terminal
 brew cask install java8 # Java 8 development
 brew cask install android-sdk # Android development
