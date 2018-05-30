@@ -31,3 +31,4 @@ map h previousTab
 map l nextTab
 
 set smoothscroll
+let blacklists = ["https://cloud.digitalocean.com/*"]
