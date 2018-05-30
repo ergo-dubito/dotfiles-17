@@ -25,6 +25,7 @@ brew install git
 brew install vim --with-override-system-vi # Get system clipboard support
 brew cask install macvim --override-system-vim # Get MacVim.app in /Applications
 brew install findutils --with-default-names # Get cool 'find' options like -printf
+brew install coreutils # Get extra Gnu command line utils like 'greadlink'
 brew install duti # Easy custom file associations
 brew install git-lfs # Track files larger than 50 MB efficiently with git
 brew cask install iterm2 # Amazing replacement for Apple's Terminal
