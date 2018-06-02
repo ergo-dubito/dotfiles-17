@@ -4,10 +4,13 @@
   autocrlf = input
   safecrlf = warn
   trustctime = false
+[commit]
+	gpgsign = true
 [alias]
-  history = log --follow --all -p
-  showlastmerge = !git log $(git merge-base --octopus $(git log -1 --merges --pretty=format:%P))..$(git log -1 --merges --pretty=format:%H) --boundary --graph --pretty=oneline --abbrev-commit
-  created = !sh -c 'git log --diff-filter=A --follow --format=%aD -- $1 | tail -1' -
+  history = log --show-signature --follow --all -p
+  showlastmerge = !git log $(git merge-base --octopus $(git log -1 --show-signature --merges --pretty=format:%P))..$(git log -1 --show-signature --merges --pretty=format:%H) --boundary --graph --pretty=oneline --abbrev-commit --show-signature
+  created = !sh -c 'git log --show-signature --diff-filter=A --follow --format=%aD -- $1 | tail -1' -
+  logs = log --show-signature
 [pager]
   log  = ~/dotfiles/git/diff-highlight | less
   show = ~/dotfiles/git/diff-highlight | less
@@ -31,5 +34,5 @@
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
-	required = true
 	process = git-lfs filter-process
+	required = true

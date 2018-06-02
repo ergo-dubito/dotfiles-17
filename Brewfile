@@ -14,6 +14,7 @@ brew 'findutils --with-default-names'
 brew 'coreutils'
 brew 'duti'
 brew 'git-lfs'
+brew 'gpg'
 
 cask 'macvim --override-system-vim'
 cask 'iterm2'

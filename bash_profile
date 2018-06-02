@@ -58,3 +58,6 @@ fi
 
 # Disable CTRL + d logging out of terminal sessions
 set -o ignoreeof
+
+# Git GPG commit signing.
+export GPG_TTY=$(tty)
