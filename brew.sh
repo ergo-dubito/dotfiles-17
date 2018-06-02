@@ -33,6 +33,8 @@ brew cask install java8 # Java 8 development
 brew cask install android-sdk # Android development
 brew cask install google-chrome # Web browsing, why not? :)
 brew cask install slack # You shouldn't work alone...
+brew cask install 1password # Manual password management is so 20th century.
+brew cask install dropbox # Share 1password data across devices.
 
 # Remove outdated versions from the cellar.
 brew cleanup
