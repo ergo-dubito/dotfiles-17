@@ -7,37 +7,10 @@ THIS_DIR="${BASH_SOURCE%/*}"
 # Install Homebrew (Should automatically trigger the prerequisite installation
 # of Xcode Command Line Tools, if they aren't already installed. Another way to
 # install them is to open Xcode for the first time.)
-
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# The preliminaries
-brew update # Use the latest version of Homebrew.
-brew upgrade # Upgrade all installed packages.
-
-# Required to install various Casks.
-brew tap caskroom/cask
-brew tap caskroom/versions
-
-# Install newer versions of bash, git, vim.
-brew install bash
-brew install bash-completion@2 # Bash tab completion
-brew install git
-brew install vim --with-override-system-vi # Get system clipboard support
-brew cask install macvim --override-system-vim # Get MacVim.app in /Applications
-brew install findutils --with-default-names # Get cool 'find' options like -printf
-brew install coreutils # Get extra Gnu command line utils like 'greadlink'
-brew install duti # Easy custom file associations
-brew install git-lfs # Track files larger than 50 MB efficiently with git
-brew cask install iterm2 # Amazing replacement for Apple's Terminal
-brew cask install java8 # Java 8 development
-brew cask install android-sdk # Android development
-brew cask install google-chrome # Web browsing, why not? :)
-brew cask install slack # You shouldn't work alone...
-brew cask install 1password # Manual password management is so 20th century.
-brew cask install dropbox # Share 1password data across devices.
-
-# Remove outdated versions from the cellar.
-brew cleanup
+# Run the Brewfile.
+brew bundle
 
 # Create .android directory if it doesn't exist.
 # Create repositories.cfg if it doesn't exist.
@@ -54,7 +27,8 @@ exec bash
 duti settings.duti
 
 # Put freshly brewed applications in the Dock.
-add_to_dock /Applications/iTerm.app
 add_to_dock /Applications/Google\ Chrome.app
+add_to_dock /Applications/iTerm.app
 add_to_dock /Applications/MacVim.app
 add_to_dock /Applications/Slack.app
+add_to_dock /Applications/1Password\ 7.app
