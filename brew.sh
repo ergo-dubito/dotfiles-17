@@ -23,6 +23,9 @@ echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
 chsh -s /usr/local/bin/bash;
 exec bash
 
+# Speed up IntelliJ Idea with custom performance settings.
+cp idea.vmoptions "`ls -dt ~/Library/Preferences/IdeaIC*|head -1`/"
+
 # Configure custom file assocations with Duti.
 duti settings.duti
 
