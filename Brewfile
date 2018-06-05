@@ -15,6 +15,7 @@ brew 'coreutils'
 brew 'duti'
 brew 'git-lfs'
 brew 'gpg'
+brew 'hub'
 
 cask 'macvim --override-system-vim'
 cask 'iterm2'
