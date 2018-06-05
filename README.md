@@ -78,6 +78,7 @@ gitconfig:
 [user]
   name = First Last
   email = your@email.com
+	signingkey = <INSERT SHORT GPG KEY>
 [credential]
   helper = osxkeychain
 ```
