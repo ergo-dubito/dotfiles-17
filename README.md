@@ -44,14 +44,14 @@ To install a new vim plugin as a git submodule into dotfiles/vim/bundle/ (assumi
 
 ```
 cd dotfiles
-git submodule add git://github.com/[username]/[repository-name].git vim/bundle/[desired-plugin-directory-name]
+git submodule add https://github.com/[username]/[repository-name].git vim/bundle/[desired-plugin-directory-name]
 ```
 
 To remove a vim plugin as a git submodule:
 ```
 rm -rf dotfiles/vim/bundle/[plugin-submodule-directory]
 ```
-[remove submodule entry from dotfiles/.gitmodules]
+[remove submodule entry from dotfiles/.gitmodules]:
 ```
 rm -rf dotfiles/.git/modules/vim/bundle/[plugin-submodule-directory]
 ```
@@ -78,7 +78,7 @@ gitconfig:
 [user]
   name = First Last
   email = your@email.com
-	signingkey = <INSERT SHORT GPG KEY>
+  signingkey = <INSERT SHORT GPG KEY>
 [credential]
   helper = osxkeychain
 ```
@@ -97,12 +97,26 @@ You can view my ```gitignore_global``` correctly in it's [raw](https://raw.githu
 ```~/.extra``` will be sourced in bash_profile if it exists. This is where you can keep personal settings that shouldn't be uploaded to a public repository. For example:
 
 ```
-GIT_AUTHOR_NAME="Your Name"
+GIT_AUTHOR_NAME="Aaron Mahan"
+GIT_AUTHOR_EMAIL=aaron@forerunner.games
 GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
-git config --global user.name "$GIT_AUTHOR_NAME"
-GIT_AUTHOR_EMAIL="you@here.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
-git config --global user.email "$GIT_AUTHOR_EMAIL"
+COMPUTERNAME="Your Computer Name""
+LOCALHOSTNAME=yourlocalhostname
+HOSTNAME=yourhostname
+ANDROID_SDK="/path/to/android-sdk"
+```
+
+There is no need to export the environment variables listed here, as
+~/.bash_profile will do it for you. That way this file can simply have a list
+of environment variables, and you can export them in ~/.bash_profile, like so:
+
+```
+# Source .extra if exists (personal settings not checked in with dotfiles)
+[[ -f ~/.extra ]] && source ~/.extra
+
+# Export $GIT_AUTHOR_NAME if it exists.
+[[ -v  "$GIT_AUTHOR_NAME" ]] && export GIT_AUTHOR_NAME
 ```
 
 ### Notes
