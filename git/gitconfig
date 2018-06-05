@@ -5,7 +5,7 @@
   safecrlf = warn
   trustctime = false
 [commit]
-	gpgsign = true
+  gpgsign = true
 [alias]
   history = log --show-signature --follow --all -p
   showlastmerge = !git log $(git merge-base --octopus $(git log -1 --show-signature --merges --pretty=format:%P))..$(git log -1 --show-signature --merges --pretty=format:%H) --boundary --graph --pretty=oneline --abbrev-commit --show-signature
