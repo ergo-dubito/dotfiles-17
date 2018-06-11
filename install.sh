@@ -13,6 +13,7 @@ printf "Copying dotfiles to HOME directory ($HOME)...\n\n"
 ln -s dotfiles/git/gitconfig .gitconfig
 ln -s dotfiles/git/gitignore_global .gitignore_global
 ln -s dotfiles/vim .vim
+ln -s dotfiles/pianobar/config .config
 ln -s dotfiles/bash_profile .bash_profile
 ln -s dotfiles/cvimrc .cvimrc
 ln -s dotfiles/hushlogin .hushlogin
