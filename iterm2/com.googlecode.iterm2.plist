@@ -59,10 +59,15 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>465 135 796 473 0 0 1920 1057 </string>
+	<string>481 83 918 512 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>280 185 1425 475 0 0 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_611E32BF-4EE0-477D-A3C4-66ADCE6E5F4F</key>
@@ -271,7 +276,7 @@
 			<key>Columns</key>
 			<integer>200</integer>
 			<key>Command</key>
-			<string>~/test.sh</string>
+			<string></string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -682,7 +687,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/aaron/IdeaProjects/peril</string>
+			<string></string>
 		</dict>
 	</array>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
