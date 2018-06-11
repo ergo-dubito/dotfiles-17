@@ -6,6 +6,8 @@ THIS_DIR="${BASH_SOURCE%/*}"
 
 printf "Installing dotfiles...\n\n"
 
+ask_for_sudo
+
 cd ~
 
 printf "Copying dotfiles to HOME directory ($HOME)...\n\n"
@@ -64,3 +66,16 @@ cp idea.vmoptions "`ls -dt ~/Library/Preferences/IdeaIC*|head -1`/"
 
 # Configure custom file assocations with Duti.
 duti settings.duti
+
+function ask_for_sudo() {
+  info "Prompting for sudo password..."
+  if sudo --validate; then
+    # Keep-alive
+    while true; do sudo --non-interactive true; \
+      sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+    success "Sudo credentials updated."
+  else
+    error "Obtaining sudo credentials failed."
+    exit 1
+  fi
+}
