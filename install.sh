@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-THIS_DIR="${BASH_SOURCE%/*}"
-[[ ! -d "$THIS_DIR" ]] && THIS_DIR="$PWD"
-[[ $(type -t "create_dotfile") != function ]] && . "$THIS_DIR/functions.sh"
-
 printf "Installing dotfiles...\n\n"
 
 ask_for_sudo
@@ -25,9 +21,6 @@ ln -s dotfiles/vimrc .vimrc
 ln -s dotfiles/iterm2/dev.sh .dev
 
 printf "Done.\n\n"
-
-create_dotfile ~/.extra
-create_dotfile ~/.gitconfig_local
 
 printf "\nConfiguring Shell Environment (sourcing ~/.bash_profile)...\n"
 source .bash_profile
