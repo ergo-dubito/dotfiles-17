@@ -2,6 +2,8 @@
 
 # MacOS High Sierra settings
 
+printf "\nConfiguring MacOS (sourcing ~/.macos)...\n"
+
 [[ -v $COMPUTERNAME ]] && sudo scutil --set ComputerName "$COMPUTERNAME"
 [[ -v $LOCALHOSTNAME ]] && sudo scutil --set LocalHostName "$LOCALHOSTNAME"
 [[ -v $HOSTNAME ]] && sudo scutil --set HostName "$HOSTNAME"
@@ -74,3 +76,5 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
 # Don't warn when emptying the trash.
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
+
+printf "Done.\n\n"
