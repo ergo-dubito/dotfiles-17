@@ -21,8 +21,8 @@ ln -s dotfiles/iterm2/dev.sh .dev
 
 printf "Done.\n\n"
 
-source dotfiles/macos.sh
 source dotfiles/brew.sh
+source dotfiles/macos.sh
 source dotfiles/gems.sh
 source dotfiles/dock.sh
 source dotfiles/iterm2/iterm2.sh

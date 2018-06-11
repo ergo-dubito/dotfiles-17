@@ -23,9 +23,9 @@ The installation script currently does the following:
 - Requests sudo access to avoid prompting for your password throughout the process.
 - Symlinks dotfiles to $HOME directory.
 - Runs brew.sh, which installs Homebrew & uses it to install formulae listed in the Brewfile.
+- Runs macos.sh for MacOS configuration.
 - Runs gems.sh, which installs the specified Ruby gems.
 - Runs dock.sh for Dock configuration.
-- Runs macos.sh for MacOS configuration.
 - Runs iterm2.sh for iTerm2 configuration.
 - Configures system shell to use updated bash shell.
 - Configures IntelliJ IDEA CE.
