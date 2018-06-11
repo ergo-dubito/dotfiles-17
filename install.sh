@@ -20,6 +20,7 @@ ln -s dotfiles/hushlogin .hushlogin
 ln -s dotfiles/ideavimrc .ideavimrc
 ln -s dotfiles/macos .macos
 ln -s dotfiles/vimrc .vimrc
+ln -s dotfiles/iterm2/dev.sh .dev
 
 printf "Done.\n\n"
 
@@ -50,6 +51,8 @@ printf "Done.\n\n"
 printf "Configuring Dock...\n"
 source dotfiles/dock.sh
 printf "Done.\n\n"
+
+source dotfiles/iterm2/iterm2.sh
 
 # Update system shell to use the new Bash.
 echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
