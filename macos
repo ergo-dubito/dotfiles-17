@@ -10,11 +10,6 @@
 [[ -v "$COMPUTERNAME" || -v  "$LOCALHOSTNAME" || -v  "$HOSTNAME" ]] && dscacheutil -flushcache
 
 # Show full file path in Finder title bar.
-#
-# To undo this setting, run:
-#
-# defaults write com.apple.finder _FXShowPosixPathInTitle -bool false
-#
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
 # Prevent creation of .DS_Store files on network drives.
