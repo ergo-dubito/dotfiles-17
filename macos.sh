@@ -2,7 +2,7 @@
 
 # MacOS High Sierra settings
 
-printf "\nConfiguring MacOS (sourcing ~/.macos)...\n"
+printf "\nConfiguring MacOS...\n"
 
 [[ -v $COMPUTERNAME ]] && sudo scutil --set ComputerName "$COMPUTERNAME"
 [[ -v $LOCALHOSTNAME ]] && sudo scutil --set LocalHostName "$LOCALHOSTNAME"

@@ -20,12 +20,18 @@ cd dotfiles
 
 The installation script currently does the following:
 
+- Requests sudo access to avoid prompting for your password throughout the process.
 - Symlinks dotfiles to $HOME directory.
-- Prompts you to create empty ~/.extra & ~/.gitconfig_local (optional).
-- Sources dotfiles/bash_profile for shell environment configuration.
-- Sources dotfiles/macos for MacOS configuration.
-- Sources dotfiles/brew.sh, which installs Homebrew & uses it to install
-  various applications, & configures custom file associations with Duti.
+- Runs brew.sh, which installs Homebrew & uses it to install formulae listed in the Brewfile.
+- Runs gems.sh, which installs the specified Ruby gems.
+- Runs dock.sh for Dock configuration.
+- Runs macos.sh for MacOS configuration.
+- Runs iterm2.sh for iTerm2 configuration.
+- Configures system shell to use updated bash shell.
+- Configures IntelliJ IDEA CE.
+- Configures custom file assocations with Duti.
+- Sources ~/.bash_profile for shell environment configuration.
+- Reminds you at the end to create ~/.extra & ~/.gitconfig_local.
 
 ### Vim
 

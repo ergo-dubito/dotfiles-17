@@ -16,13 +16,12 @@ ln -s dotfiles/bash_profile .bash_profile
 ln -s dotfiles/cvimrc .cvimrc
 ln -s dotfiles/hushlogin .hushlogin
 ln -s dotfiles/ideavimrc .ideavimrc
-ln -s dotfiles/macos .macos
 ln -s dotfiles/vimrc .vimrc
 ln -s dotfiles/iterm2/dev.sh .dev
 
 printf "Done.\n\n"
 
-source .macos
+source dotfiles/macos.sh
 source dotfiles/brew.sh
 source dotfiles/gems.sh
 source dotfiles/dock.sh
