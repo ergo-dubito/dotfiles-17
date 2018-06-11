@@ -46,3 +46,18 @@ printf "Done.\n\n"
 printf "Installing gems...\n"
 source dotfiles/gems.sh
 printf "Done.\n\n"
+
+printf "Configuring Dock...\n"
+source dotfiles/dock.sh
+printf "Done.\n\n"
+
+# Update system shell to use the new Bash.
+echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
+chsh -s /usr/local/bin/bash;
+exec bash
+
+# Speed up IntelliJ Idea with custom performance settings.
+cp idea.vmoptions "`ls -dt ~/Library/Preferences/IdeaIC*|head -1`/"
+
+# Configure custom file assocations with Duti.
+duti settings.duti
