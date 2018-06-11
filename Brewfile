@@ -16,6 +16,7 @@ brew 'duti'
 brew 'git-lfs'
 brew 'gpg'
 brew 'hub'
+brew 'dockutil'
 brew 'pianobar'
 
 cask 'macvim --override-system-vim'
