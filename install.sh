@@ -31,7 +31,6 @@ source .macos
 printf "Done.\n\n"
 
 printf "\nDotfiles have been installed. Don't forget to configure any of the following local dotfiles with your personal information:\n\n"
-
 printf "~/.extra (Git authorship and any other env vars containing personal info.)\n"
 printf "~/.gitconfig_local (Included in .gitconfig, for the [user] block and any other personal info.)\n\n"
 
