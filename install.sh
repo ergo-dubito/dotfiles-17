@@ -21,9 +21,6 @@ ln -s dotfiles/vimrc .vimrc
 ln -s dotfiles/iterm2/dev.sh .dev
 
 printf "Done.\n\n"
-printf "Configuring Shell Environment (sourcing ~/.bash_profile)...\n"
-source .bash_profile
-printf "Done.\n\n"
 
 source .macos
 source dotfiles/brew.sh
@@ -41,6 +38,10 @@ cp idea.vmoptions "`ls -dt ~/Library/Preferences/IdeaIC*|head -1`/"
 
 # Configure custom file assocations with Duti.
 duti settings.duti
+
+printf "\n\nConfiguring Shell Environment (sourcing ~/.bash_profile)...\n"
+source .bash_profile
+printf "Done.\n\n"
 
 printf "\n\nDon't forget to create the following local dotfiles with your personal information:\n\n"
 printf "~/.extra (Git authorship and any other env vars containing personal info.)\n"
