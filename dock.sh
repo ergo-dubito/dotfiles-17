@@ -11,8 +11,8 @@ defaults delete com.apple.dock; killall Dock
 printf "\nDone.\n"
 
 # Wait at least 5 seconds or the next command will fail.
-printf "\nWaiting 5 seconds for Dock to recover...\n"
-sleep 5
+printf "\nWaiting 10 seconds for Dock to recover...\n"
+sleep 10
 printf "\nDone.\n"
 
 # Wipe all default app icons from the Dock before starting.
@@ -26,6 +26,7 @@ dockutil --add /Applications/Launchpad.app
 dockutil --add /Applications/Calendar.app
 dockutil --add /Applications/Google\ Chrome.app
 dockutil --add /Applications/Utilities/Activity\ Monitor.app
+dockutil --add /Applications/Calculator.app
 dockutil --add /Applications/IntelliJ\ IDEA\ CE.app
 dockutil --add /Applications/iTerm.app --replacing 'iTerm' # In case it's open & running this script
 dockutil --add /Applications/MacVim.app
@@ -43,9 +44,11 @@ dockutil --add ~/Sync/Personal/software/dotfiles/dotfiles-todo.txt --section oth
 dockutil --add ~/Sync/Personal/software/vim/vim-notes.txt --section others
 dockutil --add ~/Sync/Personal/software/git/git-notes.txt --section others
 dockutil --add http://ci.forerunner.games --label 'peril: Build Artifacts' --section others
-dockutil --add https://travis-ci.org/forerunnergames/peril --label 'peril: Travis' --section others
-dockutil --add https://travis-ci.org/forerunnergames/fg-tools --label 'fg-tools: Travis' --section others
-dockutil --add https://github.com/forerunnergames/peril --label 'peril: GitHub' --section others
-dockutil --add https://github.com/forerunnergames/fg-tools --label 'fg-tools: GitHub' --section others
+dockutil --add http://travis.peril.forerunner.games --label 'peril: Travis' --section others
+dockutil --add http://travis.fg-tools.forerunner.games --label 'fg-tools: Travis' --section others
+dockutil --add http://github.peril.forerunner.games --label 'peril: GitHub' --section others
+dockutil --add http://github.fg-tools.forerunner.games --label 'fg-tools: GitHub' --section others
+dockutil --add http://github.forerunner.games --label 'forerunnergames: GitHub' --section others
+dockutil --add http://design.forerunner.games --label 'InvisionApp' --section others
 dockutil --add https://github.com/3xp0n3nt/dotfiles --label 'dotfiles: GitHub' --section others
 printf "\nDone.\n"
