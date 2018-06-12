@@ -14,16 +14,41 @@ printf "\nConfiguring MacOS...\n"
 # Show full file path in Finder title bar.
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
+# Keep folders on top when sorting by name in Finder.
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+
+# Make list view the default for Finder windows.
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+
+# Calculate the size of all items in Finder.
+/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.finder.plist" -c 'Delete "StandardViewSettings:ExtendedListViewSettings:calculateAllSizes" bool' 2> /dev/null
+/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.finder.plist" -c 'Add "StandardViewSettings:ExtendedListViewSettings:calculateAllSizes" bool true'
+/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.finder.plist" -c 'Delete "StandardViewSettings:ExtendedListViewSettingsV2:calculateAllSizes" bool' 2> /dev/null
+/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.finder.plist" -c 'Add "StandardViewSettings:ExtendedListViewSettingsV2:calculateAllSizes" bool true'
+/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.finder.plist" -c 'Delete "StandardViewSettings:ListViewSettings:calculateAllSizes" bool' 2> /dev/null
+/usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.finder.plist" -c 'Add "StandardViewSettings:ListViewSettings:calculateAllSizes" bool true'
+
+# Arrange by: None in Finder
+defaults write com.apple.finder FXPreferredGroupBy -string "None"
+
+# Default to home directory in new Finder windows.
+defaults write com.apple.finder NewWindowTarget -string 'PfHm'
+
+# Show status bar (bottom) in Finder.
+defaults write com.apple.finder ShowStatusBar -bool true
+
+# Desktop Icon Settings
+# Icon size: 48
+# Grid spacing: 100
+# Label position: [x] Right
+# Sort by: [Name]
+defaults write com.apple.finder DesktopViewSettings '{ "IconViewSettings" = { "iconSize" = 48; "gridSpacing" = 100; "labelOnBottom" = 0; "arrangeBy" = "name"; }; }'
+
 # Prevent creation of .DS_Store files on network drives.
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
-# Make sure any changes update immediately by restarting Finder.
-sudo killall -KILL Finder
-
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
-
-# Performance Optimizations (Mainly for older Mac's):
 
 # Increase window resize speed for Cocoa applications
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
@@ -68,13 +93,19 @@ defaults write com.apple.screencapture location -string "${HOME}/Downloads"
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-# Keep folders on top when sorting by name in Finder.
-defaults write com.apple.finder _FXSortFoldersFirst -bool true
-
-# Make list view the default for Finder windows.
-defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
-
 # Don't warn when emptying the trash.
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
-printf "Done.\n\n"
+# Remove all `.DS_Store` files to ensure Finder view settings are applied for every directory.
+printf "\nRemoving all .DS_Store files to ensure Finder settings will be
+applied. This may take several minutes...\n"
+sudo find / -depth -name ".DS_Store" -delete &>/dev/null
+printf "Done.\n"
+
+# Make sure any changes to Finder & Dock update immediately by restarting them.
+printf "\nRestarting Finder & Dock to ensure all changes are updated...\n"
+sudo killall -KILL Finder
+sudo killall -KILL Dock
+printf "Done.\n"
+
+printf "\nFinished configuring MacOS.\n\n"
