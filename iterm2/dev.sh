@@ -44,6 +44,14 @@
         write text "git status"
       end tell
 
+      set peril_settings to (create tab with default profile)
+
+      tell current session of peril_settings
+        set name to "peril-settings"
+        write text "cd ~/peril/settings/"
+        write text "ls"
+      end tell
+
       close scriptLauncherTab
     end tell
   end tell
