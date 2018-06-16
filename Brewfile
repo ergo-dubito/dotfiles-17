@@ -3,32 +3,34 @@ upgrade
 
 cask_args appdir: "/Applications"
 
-tap "caskroom/cask"
-tap "caskroom/versions"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-versions"
 
-brew 'bash'
-brew 'bash-completion@2'
-brew 'git'
-brew 'vim --with-override-system-vi'
-brew 'findutils --with-default-names'
-brew 'coreutils'
-brew 'grep'
-brew 'duti'
-brew 'git-lfs'
-brew 'gpg'
-brew 'hub'
-brew 'dockutil'
-brew 'pianobar'
+brew "bash"
+brew "bash-completion@2"
+brew "coreutils"
+brew "dockutil"
+brew "duti"
+brew "findutils", args: ["with-default-names"]
+brew "git"
+brew "git-lfs"
+brew "gpg"
+brew "grep"
+brew "hub"
+brew "mas"
+brew "pianobar"
+brew "vim", args: ["with-override-system-vi"]
 
-cask 'macvim --override-system-vim'
-cask 'iterm2'
-cask 'java8'
-cask 'intellij-idea-ce'
-cask 'android-sdk'
-cask 'google-chrome'
-cask 'slack'
-cask '1password'
-cask 'dropbox'
-cask 'flux'
+cask "homebrew/cask-versions/java8"
+cask "1password"
+cask "android-sdk"
+cask "dropbox"
+cask "flux"
+cask "google-chrome"
+cask "intellij-idea-ce"
+cask "iterm2"
+cask "macvim", args: ["override-system-vim"]
+cask "slack"
 
 cleanup
