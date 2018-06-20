@@ -28,7 +28,7 @@ dockutil --add /Applications/Google\ Chrome.app
 dockutil --add /Applications/Utilities/Activity\ Monitor.app
 dockutil --add /Applications/Calculator.app
 dockutil --add /Applications/IntelliJ\ IDEA\ CE.app
-dockutil --add /Applications/iTerm.app --replacing 'iTerm' # In case it's open & running this script
+dockutil --add /Applications/iTerm.app
 dockutil --add /Applications/MacVim.app
 dockutil --add /Applications/Slack.app
 dockutil --add "`ls -dt /Applications/1Password*|head -1`" # Name changes depending on version :'(
