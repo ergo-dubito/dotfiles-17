@@ -1,6 +1,3 @@
-update
-upgrade
-
 cask_args appdir: "/Applications"
 
 tap "homebrew/bundle"
@@ -30,7 +27,7 @@ cask "flux"
 cask "google-chrome"
 cask "intellij-idea-ce"
 cask "iterm2"
-cask "macvim", args: ["override-system-vim"]
+cask "macvim"
 cask "slack"
 
 cleanup
