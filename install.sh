@@ -26,6 +26,7 @@ source dotfiles/macos.sh
 source dotfiles/gems.sh
 source dotfiles/dock.sh
 source dotfiles/iterm2/iterm2.sh
+source dotfiles/android.sh
 
 # Configure XCode
 sudo xcode-select -s /Applications/Xcode.app/Contents/Developer # See https://stackoverflow.com/a/17980786/711807
