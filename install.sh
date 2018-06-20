@@ -27,6 +27,11 @@ source dotfiles/gems.sh
 source dotfiles/dock.sh
 source dotfiles/iterm2/iterm2.sh
 
+# Configure XCode
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer # See https://stackoverflow.com/a/17980786/711807
+sudo xcodebuild -license accept
+sudo xcodebuild -runFirstLaunch # Install additional components
+
 # Update system shell to use the new Bash.
 echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
 chsh -s /usr/local/bin/bash;
