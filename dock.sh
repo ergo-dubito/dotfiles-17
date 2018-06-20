@@ -32,6 +32,7 @@ dockutil --add /Applications/iTerm.app
 dockutil --add /Applications/MacVim.app
 dockutil --add /Applications/Slack.app
 dockutil --add "`ls -dt /Applications/1Password*|head -1`" # Name changes depending on version :'(
+dockutil --add /Applications/OpenOffice.app
 dockutil --add /Applications/iTunes.app
 dockutil --add /Applications/Messages.app
 dockutil --add /Applications/Reminders.app
