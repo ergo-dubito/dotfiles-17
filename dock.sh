@@ -43,6 +43,7 @@ dockutil --add ~/Sync/Business/Forerunner\ Games/peril/documents/peril-todo.txt 
 dockutil --add ~/Sync/Personal/software/dotfiles/dotfiles-todo.txt --section others
 dockutil --add ~/Sync/Personal/software/vim/vim-notes.txt --section others
 dockutil --add ~/Sync/Personal/software/git/git-notes.txt --section others
+dockutil --add ~/Sync/Personal/software/intellij/intellij-notes.txt --section others
 dockutil --add http://ci.forerunner.games --label 'peril: Build Artifacts' --section others
 dockutil --add http://travis.peril.forerunner.games --label 'peril: Travis' --section others
 dockutil --add http://travis.fg-tools.forerunner.games --label 'fg-tools: Travis' --section others
