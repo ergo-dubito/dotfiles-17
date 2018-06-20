@@ -14,10 +14,14 @@ brew upgrade
 printf "Done.\n\n"
 
 # Run the Brewfile to install Formulae.
-printf "Installing Homebrew Formulae...\n"
+printf "Installing Homebrew Formulae & Mac App Store apps...\n"
 brew bundle
 printf "Done.\n\n"
 
 printf "Cleaning up after installing Homebrew formula...\n"
 brew cleanup
+printf "Done.\n\n"
+
+printf "Upgrading Mac App Store installs...\n"
+mas upgrade
 printf "Done.\n\n"
