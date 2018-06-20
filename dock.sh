@@ -10,7 +10,7 @@ printf "\nResetting dock to default state...\n"
 defaults delete com.apple.dock; killall Dock
 printf "\nDone.\n"
 
-# Wait at least 5 seconds or the next command will fail.
+# Wait at least 10 seconds or the next command will fail.
 printf "\nWaiting 10 seconds for Dock to recover...\n"
 sleep 10
 printf "\nDone.\n"
