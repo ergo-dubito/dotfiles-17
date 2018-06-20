@@ -5,19 +5,30 @@ if [[ !  $(type "dockutil")  ]] > /dev/null 2>&1; then
   exit 1
 fi
 
+# Guarantees the script will stop when pressing CTRL + C.
+trap '
+  trap - INT # restore default INT handler
+  kill -s INT "$$"
+' INT
+
 # Reset Dock to default state before starting.
 printf "\nResetting dock to default state...\n"
 defaults delete com.apple.dock; killall Dock
 printf "\nDone.\n"
 
-# Wait at least 10 seconds or the next command will fail.
-printf "\nWaiting 10 seconds for Dock to recover...\n"
-sleep 10
+# Wait at least 30 seconds or the next command may fail.
+printf "\nWaiting 30 seconds for Dock to recover...\n"
+sleep 30
 printf "\nDone.\n"
 
 # Wipe all default app icons from the Dock before starting.
 printf "\nCompletely emptying all app icons from the Dock...\n"
 defaults write com.apple.dock persistent-apps -array; killall Dock
+printf "\nDone.\n"
+
+# Wait at least 30 seconds or the next command may fail.
+printf "\nWaiting 30 seconds for Dock to recover...\n"
+sleep 30
 printf "\nDone.\n"
 
 # Configure dock apps, folders, files, & links.
