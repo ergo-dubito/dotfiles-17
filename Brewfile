@@ -18,6 +18,7 @@ brew "hub"
 brew "mas"
 brew "pianobar"
 brew "vim", args: ["with-override-system-vi"]
+brew wget
 
 cask "homebrew/cask-versions/java8"
 cask "1password"
