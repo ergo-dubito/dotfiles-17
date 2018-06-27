@@ -52,6 +52,13 @@
         write text "ls"
       end tell
 
+      set peril_server_remote to (create tab with default profile)
+
+      tell current session of peril_server_remote
+        set name to "peril-server-remote"
+        write text "ssh-add ~/.ssh/id_rsa"
+      end tell
+
       close scriptLauncherTab
     end tell
   end tell
