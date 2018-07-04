@@ -50,7 +50,7 @@ dockutil --add /Applications/Reminders.app
 dockutil --add /Applications/Notes.app
 dockutil --add /Applications/System\ Preferences.app
 dockutil --add ~/Downloads --section others --view list --display folder --sort dateadded --replacing 'Downloads' # It's already there; just change its layout
-dockutil --add ~/Sync/Business/Forerunner\ Games/peril/scripts/aaron/peril-scripts --section others --view list --display folder --sort name
+dockutil --add ~/IdeaProjects/peril/scripts/builds/local/macos --section others --view list --display folder --sort name
 dockutil --add ~/Sync/Business/Forerunner\ Games/peril/documents/peril-todo.txt --section others
 dockutil --add ~/Sync/Personal/software/dotfiles/dotfiles-todo.txt --section others
 dockutil --add ~/Sync/Personal/software/vim/vim-notes.txt --section others
