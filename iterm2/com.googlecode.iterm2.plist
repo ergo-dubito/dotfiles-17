@@ -4,6 +4,8 @@
 <dict>
 	<key>AllowClipboardAccess</key>
 	<true/>
+	<key>AlternateMouseScroll</key>
+	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
 	<key>AppleScrollAnimationEnabled</key>
@@ -69,7 +71,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>481 83 918 512 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>244 292 1425 475 0 0 1920 1057 </string>
+	<string>251 378 1425 475 0 0 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_611E32BF-4EE0-477D-A3C4-66ADCE6E5F4F</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_611E32BF-4EE0-477D-A3C4-66ADCE6E5F4F_selection</key>
@@ -756,7 +758,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-06-12T15:19:03Z</date>
+	<date>2018-07-03T02:43:54Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
