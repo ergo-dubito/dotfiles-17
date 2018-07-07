@@ -51,12 +51,13 @@ dockutil --add /Applications/Notes.app
 dockutil --add /Applications/System\ Preferences.app
 dockutil --add ~/Downloads --section others --view list --display folder --sort dateadded --replacing 'Downloads' # It's already there; just change its layout
 dockutil --add ~/IdeaProjects/peril/scripts/builds/local/macos --section others --view list --display folder --sort name
+dockutil --add ~/Sync/Business/Forerunner\ Games/peril/scripts/aaron/peril-scripts --section others --view list --display folder --sort name
 dockutil --add ~/Sync/Business/Forerunner\ Games/peril/documents/peril-todo.txt --section others
 dockutil --add ~/Sync/Personal/software/dotfiles/dotfiles-todo.txt --section others
 dockutil --add ~/Sync/Personal/software/vim/vim-notes.txt --section others
 dockutil --add ~/Sync/Personal/software/git/git-notes.txt --section others
 dockutil --add ~/Sync/Personal/software/intellij/intellij-notes.txt --section others
-dockutil --add http://ci.forerunner.games --label 'peril: Build Artifacts' --section others
+dockutil --add http://ci.forerunner.games --label 'ci.forerunner.games' --section others
 dockutil --add http://travis.peril.forerunner.games --label 'peril: Travis' --section others
 dockutil --add http://travis.fg-tools.forerunner.games --label 'fg-tools: Travis' --section others
 dockutil --add http://github.peril.forerunner.games --label 'peril: GitHub' --section others
