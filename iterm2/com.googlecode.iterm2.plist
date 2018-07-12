@@ -66,12 +66,14 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>650 514 620 392 0 0 1920 1057 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>481 83 918 512 0 0 1920 1057 </string>
+	<string>512 224 796 473 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>251 378 1425 475 0 0 1920 1057 </string>
+	<string>197 412 1425 475 0 0 1920 1057 </string>
 	<key>NeverWarnAboutShortLivedSessions_611E32BF-4EE0-477D-A3C4-66ADCE6E5F4F</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_611E32BF-4EE0-477D-A3C4-66ADCE6E5F4F_selection</key>
@@ -658,6 +660,15 @@
 				<key>Red Component</key>
 				<real>0.70980000495910645</real>
 			</dict>
+			<key>Semantic History</key>
+			<dict>
+				<key>action</key>
+				<string>command</string>
+				<key>editor</key>
+				<string>org.vim.MacVim</string>
+				<key>text</key>
+				<string> [ -z \2 ] &amp;&amp; /usr/local/bin/idea \1 || /usr/local/bin/idea --line \2 \1</string>
+			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
 			<key>Shortcut</key>
@@ -758,7 +769,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-07-03T02:43:54Z</date>
+	<date>2018-07-12T02:56:16Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -770,6 +781,6 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.1.6</string>
+	<string>3.1.7</string>
 </dict>
 </plist>
