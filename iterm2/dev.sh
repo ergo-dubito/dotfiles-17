@@ -59,6 +59,12 @@
         write text "ssh-add ~/.ssh/id_rsa"
       end tell
 
+      set scratch to (create tab with default profile)
+
+      tell current session of scratch
+        set name to "scratch"
+      end tell
+
       close scriptLauncherTab
     end tell
   end tell
