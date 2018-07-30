@@ -10,12 +10,14 @@ set nocompatible
 " Map <leader> key from backslash to comma to keep fingers on home row
 let mapleader = ","
 
-" Load pathogen plugin, which will load all other plugins.
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
-
-" Use pathogen plugin to automatically generate helptags for all plugins.
-execute pathogen#helptags()
+" Load pathogen plugin (if it exists).
+runtime! bundle/vim-pathogen/autoload/pathogen.vim
+if exists("*pathogen#infect")
+  " Use pathogen to load all other plugins.
+  execute pathogen#infect()
+  " Use pathogen plugin to automatically generate helptags for all plugins.
+  execute pathogen#helptags()
+endif
 
 " -----------------------------------------------------------------------------
 " -- End Very Important Settings ----------------------------------------------
@@ -45,7 +47,7 @@ highlight DiffText   cterm=bold ctermfg=10 ctermbg=88 gui=none guifg=bg guibg=Re
 
 " Customize the status bar
 set statusline =[%F]%m%r\ %=
-set statusline +=%{fugitive#statusline()} " Fugitive / Git
+set statusline+=%{exists('g:loaded_fugitive')?fugitive#statusline():''} " Fugitive / Git
 set statusline +=\ [%l\ /\ %L]\ [%p%%]\ [%v]
 
 " -----------------------------------------------------------------------------
@@ -216,13 +218,26 @@ noremap <c-t> :tabnew<cr>
 " working directory (helps with git repositories & network drives)
 set directory=$HOME/.vim/_swap//
 
+" Create swap file directory if it doesn't exist.
+if !isdirectory(expand(&directory))
+  call mkdir(expand(&directory), "p")
+endif
+
 " Enable backup files and set their location
 set backup
 set backupdir=$HOME/.vim/_backup//
+" Create backup file directory if it doesn't exist.
+if !isdirectory(expand(&backupdir))
+  call mkdir(expand(&backupdir), "p")
+endif
 
 " Enable undo files and set their location
 set undofile
 set undodir=$HOME/.vim/_undo//
+" Create undo file directory if it doesn't exist.
+if !isdirectory(expand(&undodir))
+  call mkdir(expand(&undodir), "p")
+endif
 
 " Show command line autocomplete options in the status bar
 set wildmenu
@@ -254,19 +269,24 @@ nmap <D-4> g$
 " -----------------------------------------------------------------------------
 
 
+
 " -----------------------------------------------------------------------------
 " -- Begin CamelCase Plugin Settings ------------------------------------------
 " -----------------------------------------------------------------------------
 
-" w, b, and e keys use camelCase motion
-map <silent> w <Plug>CamelCaseMotion_w
-map <silent> b <Plug>CamelCaseMotion_b
-map <silent> e <Plug>CamelCaseMotion_e
-map <silent> ge <Plug>CamelCaseMotion_ge
-sunmap w
-sunmap b
-sunmap e
-sunmap ge
+" Only configure if the plugin exists (was loaded by pathogen).
+if &runtimepath =~ 'CamelCaseMotion'
+  " w, b, and e keys use camelCase motion
+  " Note: ge is not implented
+  map <silent> w <Plug>CamelCaseMotion_w
+  map <silent> b <Plug>CamelCaseMotion_b
+  map <silent> e <Plug>CamelCaseMotion_e
+  map <silent> ge <Plug>CamelCaseMotion_ge
+  sunmap w
+  sunmap b
+  sunmap e
+  sunmap ge
+endif
 
 " -----------------------------------------------------------------------------
 " -- End CamelCase Plugin Settings --------------------------------------------
