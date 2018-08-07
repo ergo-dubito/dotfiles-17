@@ -294,3 +294,22 @@ endif
 " -----------------------------------------------------------------------------
 " -- End CamelCase Plugin Settings --------------------------------------------
 " -----------------------------------------------------------------------------
+
+
+
+" -----------------------------------------------------------------------------
+" -- Begin vim-session Plugin Settings ----------------------------------------
+" -----------------------------------------------------------------------------
+
+" Only configure if the plugin exists (was loaded by pathogen).
+if &runtimepath =~ 'vim-session'
+  let g:session_directory = '~/.vim/_session'
+  " Create session file directory if it doesn't exist.
+  if !isdirectory(expand(session_directory))
+    call mkdir(expand(session_directory), "p")
+  endif
+endif
+
+" -----------------------------------------------------------------------------
+" -- End vim-session Plugin Settings ------------------------------------------
+" -----------------------------------------------------------------------------

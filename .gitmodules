@@ -22,3 +22,11 @@
 	path = vim/bundle/vim-abolish
 	url = https://github.com/tpope/vim-abolish.git
   branch = master
+[submodule "vim/bundle/vim-misc"]
+	path = vim/bundle/vim-misc
+	url = https://github.com/xolox/vim-misc.git
+  branch = master
+[submodule "vim/bundle/vim-session"]
+	path = vim/bundle/vim-session
+	url = https://github.com/xolox/vim-session.git
+  branch = master
