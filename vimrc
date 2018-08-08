@@ -220,7 +220,6 @@ noremap <c-t> :tabnew<cr>
 " Put vim swap files in one central directory so they don't clutter the
 " working directory (helps with git repositories & network drives)
 set directory=$HOME/.vim/_swap//
-
 " Create swap file directory if it doesn't exist.
 if !isdirectory(expand(&directory))
   call mkdir(expand(&directory), "p")
