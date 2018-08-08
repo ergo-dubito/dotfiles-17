@@ -49,7 +49,7 @@ highlight DiffText   cterm=bold ctermfg=10 ctermbg=88 gui=none guifg=bg guibg=Re
 set statusline =[%F]%m%r\ %=
 set statusline +=%{exists('g:loaded_fugitive')?fugitive#statusline():''} " Fugitive / Git
 set statusline +=\ [%l\ /\ %L]\ [%p%%]\ [%v]
-if exists('g:loaded_VisualSelectionSize')
+if &runtimepath =~ 'VisualSelectionSize'
   set statusline +=%(\ [%{VisualSelectionSize()}]%)
 endif
 
