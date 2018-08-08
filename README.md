@@ -93,8 +93,7 @@ gitignore_global:
 
 ```gitignore_global``` cannot be displayed properly in the GitHub preview window ever since I added two literal ```^M``` (aka ```\r```, or carriage return) characters to the OS X ```Icon```
 rule, so that git will correctly ignore OS X-generated ```Icon\r``` files (that deceptively appear as
-```Icon?```'s). You can check out [this](http://blog.bitfluent.com/post/173740409/ignoring-icon-in-gitignore) blog post for more
-information. (Side note: to create a literal ```^M``` in vim, type ```<ctrl>v <ctrl>m``` from insert mode.)
+```Icon?```'s). (Side note: to create a literal ```^M``` in vim, type ```<ctrl>v <ctrl>m``` from insert mode.)
 
 You can view my ```gitignore_global``` correctly in it's [raw](https://raw.github.com/3xp0n3nt/dotfiles/master/git/gitignore_global) form (although you still won't be able to see the literal ```^M``` 's.).
 
@@ -129,7 +128,6 @@ of environment variables, and you can export them in ~/.bash_profile, like so:
 
 Many of these dotfiles are customized for MacOS High Sierra. You may need to modify them for your specific OS.
 
-My collection of dotfiles is still in its infancy. I am inspired, however, by
-Mathias Bynens' impressive [collection](https://github.com/mathiasbynens/dotfiles) of collaborative dotfiles.
+My dotfiles are inspired by Mathias Bynens' impressive [collection](https://github.com/mathiasbynens/dotfiles) of collaborative dotfiles.
 
 This README file is named ```README.md``` to indicate that it uses [GitHub-flavored markdown](http://github.github.com/github-flavored-markdown).
