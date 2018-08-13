@@ -96,6 +96,9 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 # Don't warn when emptying the trash.
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
+# Disable crash reports dialog (not crash reports).
+defaults write com.apple.CrashReporter DialogType none
+
 # Remove all `.DS_Store` files to ensure Finder view settings are applied for every directory.
 printf "\nRemoving all .DS_Store files to ensure Finder settings will be
 applied. This may take several minutes...\n"

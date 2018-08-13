@@ -27,9 +27,6 @@ export VISUAL=vim
 # Enable OpenGL Profiler
 export GL_ENABLE_DEBUG_ATTACH YES
 
-# Disable crash reporter
-defaults write com.apple.CrashReporter DialogType none
-
 # Configure terminal prompt appearance
 export PS1='\u \W $ '
 
