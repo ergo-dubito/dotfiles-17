@@ -8,7 +8,7 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="$PATH:/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources"
 
 # python
-PYTHONPATH="$HOME/Library/Python/2.7/lib/python/site-packages:$PYTHONPATH"
+PYTHONPATH="$HOME/Library/Python/2.7/lib/python/site-packages${PYTHONPATH:+":$PYTHONPATH"}"
 export PYTHONPATH
 
 # perlbrew
