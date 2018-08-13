@@ -96,6 +96,9 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 # Don't warn when emptying the trash.
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
+# Prevent Photos app from opening when connecting devices.
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
+
 # Disable crash reports dialog (not crash reports).
 defaults write com.apple.CrashReporter DialogType none
 
