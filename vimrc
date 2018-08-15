@@ -92,7 +92,9 @@ fun! <SID>StripTrailingWhitespaces()
     %s/\s\+$//e
     call cursor(l, c)
 endfun
-autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+" Exclude git's *.diff files when doing manual hunk editing.
+" Removing trailing whitespace causes the hunk to not apply cleanly.
+autocmd BufWritePre * if expand('<afile>:e') !=? 'diff' | :call <SID>StripTrailingWhitespaces() | endif
 
 " -----------------------------------------------------------------------------
 " -- End Formatting Settings --------------------------------------------------
