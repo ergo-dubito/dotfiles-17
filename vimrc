@@ -278,7 +278,7 @@ nmap <D-4> g$
 " -- Begin CamelCase Plugin Settings ------------------------------------------
 " -----------------------------------------------------------------------------
 
-" Only configure if the plugin exists (was loaded by pathogen).
+" Only configure if the plugin's directory exists.
 if &runtimepath =~ 'CamelCaseMotion'
   " w, b, and e keys use camelCase motion
   " Note: ge is not implented
@@ -302,7 +302,7 @@ endif
 " -- Begin vim-session Plugin Settings ----------------------------------------
 " -----------------------------------------------------------------------------
 
-" Only configure if the plugin exists (was loaded by pathogen).
+" Only configure if the plugin's directory exists.
 if &runtimepath =~ 'vim-session'
   let g:session_directory = '~/.vim/_session'
   " Create session file directory if it doesn't exist.
